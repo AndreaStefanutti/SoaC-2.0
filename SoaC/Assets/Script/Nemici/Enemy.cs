@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
        
         transform.position = Vector3.MoveTowards(transform.position, target.position, speed);
         float distance = Vector3.Distance(target.position, transform.position);
-            if (distance < 2)
+            if (distance < 0.5)
         {
             anim.SetBool("isWalking", false);
             anim.SetBool("attack", true);

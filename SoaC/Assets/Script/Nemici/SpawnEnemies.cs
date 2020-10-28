@@ -24,17 +24,15 @@ public class SpawnEnemies : MonoBehaviour
     {
         while(enemyCount < 100)
         {
-            xPos = Random.Range(30, 20);
-            zPos = Random.Range(0, -63);
+            xPos = Random.Range(40, 36);
+            zPos = Random.Range(-13, 20);
             Instantiate(theEnemy, new Vector3(xPos, 0, zPos), Quaternion.identity);
-            xPos = Random.Range(30, 20);
-            zPos = Random.Range(-62, -54);
+            xPos = Random.Range(5, -17);
+            zPos = Random.Range(18, 20);
             Instantiate(theEnemy, new Vector3(xPos, 0, zPos), Quaternion.identity);
-            xPos = Random.Range(-55,-65);
-            zPos = Random.Range(0, -63);
+            xPos = Random.Range(-18,-22);
+            zPos = Random.Range(18, -26);
             Instantiate(theEnemy, new Vector3(xPos, 0, zPos), Quaternion.identity);
-            xPos = Random.Range(-55, -65);
-            zPos = Random.Range(-62, -54);
             Instantiate(theEnemy, new Vector3(xPos, 0, zPos), Quaternion.identity);
             yield return new WaitForSeconds(5f);
             enemyCount += 1;
