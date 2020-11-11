@@ -27,7 +27,7 @@ public class PickUpController : MonoBehaviour
         }
         if (equipped)
         {
-           // gunScript.enabled = true;
+            // gunScript.enabled = true;
             rb.isKinematic = true;
             coll.isTrigger = true;
             slotFull = true;
