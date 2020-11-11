@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class FloatingObject : MonoBehaviour
 {
-  //  [SerializeField]
+    //  [SerializeField]
     //AudioSource audioSource;
     //[SerializeField]
-   // AudioClip pickSound;
+    // AudioClip pickSound;
     public bool goUp;
     public float speed = 1;
     public float rotationSpeed = 1;
@@ -62,4 +62,3 @@ public class FloatingObject : MonoBehaviour
         GetComponent<Renderer>().enabled = false;
     }*/
 }
-    
