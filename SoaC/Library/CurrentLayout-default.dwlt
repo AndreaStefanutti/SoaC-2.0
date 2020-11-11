@@ -22,11 +22,8 @@ MonoBehaviour:
   m_Title: 
   m_RootView: {fileID: 7}
 <<<<<<< HEAD
-<<<<<<< HEAD
   m_MinSize: {x: 875, y: 300}
 =======
-=======
->>>>>>> parent of c1ca5bf6... mappa
   m_MinSize: {x: 875, y: 542}
 >>>>>>> parent of c1ca5bf6... mappa
   m_MaxSize: {x: 10000, y: 10000}
@@ -47,7 +44,6 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
-<<<<<<< HEAD
     x: 627
     y: 0
     width: 531
@@ -57,17 +53,6 @@ MonoBehaviour:
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
-=======
-    x: 688
-    y: 0
-    width: 346
-    height: 446
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 19}
-  m_Panes:
-  - {fileID: 19}
->>>>>>> parent of c1ca5bf6... mappa
 =======
     x: 688
     y: 0
@@ -101,21 +86,12 @@ MonoBehaviour:
     x: 0
     y: 30
 <<<<<<< HEAD
-<<<<<<< HEAD
     width: 1536
     height: 731
   m_MinSize: {x: 881, y: 492}
   m_MaxSize: {x: 16006, y: 14042}
   vertical: 0
   controlID: 160
-=======
-    width: 1522
-    height: 717
-  m_MinSize: {x: 881, y: 492}
-  m_MaxSize: {x: 16006, y: 14042}
-  vertical: 0
-  controlID: 15
->>>>>>> parent of c1ca5bf6... mappa
 =======
     width: 1522
     height: 717
@@ -140,7 +116,6 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
-<<<<<<< HEAD
     x: 1158
     y: 0
     width: 378
@@ -150,17 +125,6 @@ MonoBehaviour:
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
-=======
-    x: 1034
-    y: 0
-    width: 488
-    height: 717
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 16}
-  m_Panes:
-  - {fileID: 16}
->>>>>>> parent of c1ca5bf6... mappa
 =======
     x: 1034
     y: 0
@@ -192,7 +156,6 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
-<<<<<<< HEAD
     width: 230
     height: 455
   m_MinSize: {x: 201, y: 221}
@@ -201,8 +164,6 @@ MonoBehaviour:
   m_Panes:
   - {fileID: 16}
 =======
-=======
->>>>>>> parent of c1ca5bf6... mappa
     width: 341
     height: 446
   m_MinSize: {x: 200, y: 200}
@@ -210,9 +171,6 @@ MonoBehaviour:
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
-<<<<<<< HEAD
->>>>>>> parent of c1ca5bf6... mappa
-=======
 >>>>>>> parent of c1ca5bf6... mappa
   m_Selected: 0
   m_LastSelected: 0
@@ -233,7 +191,6 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
-<<<<<<< HEAD
     y: 455
     width: 1158
     height: 276
@@ -243,17 +200,6 @@ MonoBehaviour:
   m_Panes:
   - {fileID: 14}
   - {fileID: 19}
-=======
-    y: 446
-    width: 1034
-    height: 271
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 15}
-  m_Panes:
-  - {fileID: 15}
-  - {fileID: 20}
->>>>>>> parent of c1ca5bf6... mappa
 =======
     y: 446
     width: 1034
@@ -288,13 +234,10 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
-<<<<<<< HEAD
     width: 1536
     height: 781
   m_MinSize: {x: 875, y: 300}
 =======
-=======
->>>>>>> parent of c1ca5bf6... mappa
     width: 1522
     height: 767
   m_MinSize: {x: 875, y: 542}
@@ -363,21 +306,12 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
-<<<<<<< HEAD
     width: 1158
     height: 731
   m_MinSize: {x: 605, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
   controlID: 111
-=======
-    width: 1034
-    height: 717
-  m_MinSize: {x: 604, y: 492}
-  m_MaxSize: {x: 12004, y: 14042}
-  vertical: 1
-  controlID: 16
->>>>>>> parent of c1ca5bf6... mappa
 =======
     width: 1034
     height: 717
@@ -407,21 +341,12 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
-<<<<<<< HEAD
     width: 1158
     height: 455
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
   controlID: 91
-=======
-    width: 1034
-    height: 446
-  m_MinSize: {x: 604, y: 221}
-  m_MaxSize: {x: 12004, y: 4021}
-  vertical: 0
-  controlID: 17
->>>>>>> parent of c1ca5bf6... mappa
 =======
     width: 1034
     height: 446
@@ -446,7 +371,6 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
-<<<<<<< HEAD
     x: 230
     y: 0
     width: 397
@@ -468,27 +392,12 @@ MonoBehaviour:
   - {fileID: 18}
   - {fileID: 14}
 >>>>>>> parent of c1ca5bf6... mappa
-=======
-    x: 341
-    y: 0
-    width: 347
-    height: 446
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 18}
-  m_Panes:
-  - {fileID: 18}
-  - {fileID: 14}
->>>>>>> parent of c1ca5bf6... mappa
   - {fileID: 13}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &13
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
-=======
->>>>>>> parent of c1ca5bf6... mappa
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -552,9 +461,6 @@ MonoBehaviour:
   m_LayerEditor:
     m_SelectedLayerIndex: 0
 --- !u!114 &14
-<<<<<<< HEAD
->>>>>>> parent of c1ca5bf6... mappa
-=======
 >>>>>>> parent of c1ca5bf6... mappa
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -577,21 +483,12 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
-<<<<<<< HEAD
     x: 346.4
     y: 73.6
     width: 347
     height: 434
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &14
-=======
-    x: 348
-    y: 80.8
-    width: 345
-    height: 425
-  m_ViewDataDictionary: {fileID: 0}
---- !u!114 &15
->>>>>>> parent of c1ca5bf6... mappa
 =======
     x: 348
     y: 80.8
@@ -621,21 +518,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
-<<<<<<< HEAD
     x: 0
     y: 528
     width: 1157
     height: 255
 =======
-=======
->>>>>>> parent of c1ca5bf6... mappa
     x: 7.2000003
     y: 526.4
     width: 1033
     height: 250
-<<<<<<< HEAD
->>>>>>> parent of c1ca5bf6... mappa
-=======
 >>>>>>> parent of c1ca5bf6... mappa
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -652,19 +543,11 @@ MonoBehaviour:
     m_SearchArea: 1
     m_Folders:
 <<<<<<< HEAD
-<<<<<<< HEAD
     - Assets/Script/Armi
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/Script/Armi
-=======
-    - Assets/BrokenVector/LowPolyBrickHouses/Models
-  m_ViewMode: 1
-  m_StartGridSize: 64
-  m_LastFolders:
-  - Assets/BrokenVector/LowPolyBrickHouses/Models
->>>>>>> parent of c1ca5bf6... mappa
 =======
     - Assets/BrokenVector/LowPolyBrickHouses/Models
   m_ViewMode: 1
@@ -678,21 +561,15 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
 <<<<<<< HEAD
-<<<<<<< HEAD
     scrollPos: {x: 0, y: 233}
     m_SelectedIDs: 22430000
     m_LastClickedID: 17186
     m_ExpandedIDs: 00000000ca420000cc420000ce420000d0420000d2420000d442000000ca9a3b
 =======
-=======
->>>>>>> parent of c1ca5bf6... mappa
     scrollPos: {x: 0, y: 223}
     m_SelectedIDs: 4e4e0000
     m_LastClickedID: 20046
     m_ExpandedIDs: 00000000943f0000963f00009a3f00009c3f00009e3f0000a03f0000a23f0000a43f0000ca3f0000d03f000000ca9a3b
-<<<<<<< HEAD
->>>>>>> parent of c1ca5bf6... mappa
-=======
 >>>>>>> parent of c1ca5bf6... mappa
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -722,11 +599,7 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
-<<<<<<< HEAD
     m_ExpandedIDs: 00000000c6420000c8420000ca420000cc420000ce420000d0420000d2420000d4420000
-=======
-    m_ExpandedIDs: 00000000943f0000963f0000983f00009a3f00009c3f00009e3f0000a03f0000a23f0000a43f0000
->>>>>>> parent of c1ca5bf6... mappa
 =======
     m_ExpandedIDs: 00000000943f0000963f0000983f00009a3f00009c3f00009e3f0000a03f0000a23f0000a43f0000
 >>>>>>> parent of c1ca5bf6... mappa
@@ -786,11 +659,7 @@ MonoBehaviour:
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 234
 <<<<<<< HEAD
-<<<<<<< HEAD
 --- !u!114 &15
-=======
---- !u!114 &16
->>>>>>> parent of c1ca5bf6... mappa
 =======
 --- !u!114 &16
 >>>>>>> parent of c1ca5bf6... mappa
@@ -815,21 +684,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
-<<<<<<< HEAD
     x: 1158.4
     y: 73.6
     width: 377
     height: 710
 =======
-=======
->>>>>>> parent of c1ca5bf6... mappa
     x: 1041.6
     y: 80.8
     width: 486
     height: 696
-<<<<<<< HEAD
->>>>>>> parent of c1ca5bf6... mappa
-=======
 >>>>>>> parent of c1ca5bf6... mappa
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
@@ -845,11 +708,7 @@ MonoBehaviour:
   m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
 <<<<<<< HEAD
-<<<<<<< HEAD
 --- !u!114 &16
-=======
---- !u!114 &17
->>>>>>> parent of c1ca5bf6... mappa
 =======
 --- !u!114 &17
 >>>>>>> parent of c1ca5bf6... mappa
@@ -874,36 +733,24 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
-<<<<<<< HEAD
     x: 0
     y: 73.6
     width: 229
     height: 434
 =======
-=======
->>>>>>> parent of c1ca5bf6... mappa
     x: 7.2000003
     y: 80.8
     width: 340
     height: 425
-<<<<<<< HEAD
->>>>>>> parent of c1ca5bf6... mappa
-=======
 >>>>>>> parent of c1ca5bf6... mappa
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
-<<<<<<< HEAD
       m_SelectedIDs: 6ee9ffff
       m_LastClickedID: -5778
       m_ExpandedIDs: 58f1fffff43a0000
-=======
-      m_SelectedIDs: 02800100
-      m_LastClickedID: 98306
-      m_ExpandedIDs: 4a8bfdff648bfdff7e8cfdffcce6ffff00fbffff82360000a438000098390000da390000
->>>>>>> parent of c1ca5bf6... mappa
 =======
       m_SelectedIDs: 02800100
       m_LastClickedID: 98306
@@ -933,11 +780,7 @@ MonoBehaviour:
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: a6b4319894030a648975683d38f4dfc9
 <<<<<<< HEAD
-<<<<<<< HEAD
 --- !u!114 &17
-=======
---- !u!114 &18
->>>>>>> parent of c1ca5bf6... mappa
 =======
 --- !u!114 &18
 >>>>>>> parent of c1ca5bf6... mappa
@@ -962,21 +805,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
-<<<<<<< HEAD
     x: 230.40001
     y: 73.6
     width: 395
     height: 434
 =======
-=======
->>>>>>> parent of c1ca5bf6... mappa
     x: 348
     y: 80.8
     width: 345
     height: 425
-<<<<<<< HEAD
->>>>>>> parent of c1ca5bf6... mappa
-=======
 >>>>>>> parent of c1ca5bf6... mappa
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
@@ -992,11 +829,7 @@ MonoBehaviour:
     m_Target: {x: -21.628798, y: 76.43451, z: -22.3068}
     speed: 2
 <<<<<<< HEAD
-<<<<<<< HEAD
     m_Value: {x: -32.297577, y: 1.5292205, z: -3.9189806}
-=======
-    m_Value: {x: -21.628798, y: 76.43451, z: -22.3068}
->>>>>>> parent of c1ca5bf6... mappa
 =======
     m_Value: {x: -21.628798, y: 76.43451, z: -22.3068}
 >>>>>>> parent of c1ca5bf6... mappa
@@ -1046,7 +879,6 @@ MonoBehaviour:
     m_gridOpacity: 0.5
   m_Rotation:
 <<<<<<< HEAD
-<<<<<<< HEAD
     m_Target: {x: 0.21575141, y: 0.73707277, z: -0.27491412, w: 0.5784479}
     speed: 2
     m_Value: {x: -0, y: 0, z: -0, w: -1}
@@ -1061,15 +893,6 @@ MonoBehaviour:
 <<<<<<< HEAD
     m_Value: 1.7598066
 =======
-    m_Value: 26.238935
->>>>>>> parent of c1ca5bf6... mappa
-=======
-    m_Target: {x: -0.5467844, y: -0.36864808, z: 0.29074246, w: -0.69327176}
-    speed: 2
-    m_Value: {x: -0.5467758, y: -0.36864227, z: 0.29073787, w: -0.69326085}
-  m_Size:
-    m_Target: 26.238935
-    speed: 2
     m_Value: 26.238935
 >>>>>>> parent of c1ca5bf6... mappa
   m_Ortho:
@@ -1097,11 +920,7 @@ MonoBehaviour:
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
 <<<<<<< HEAD
-<<<<<<< HEAD
 --- !u!114 &18
-=======
---- !u!114 &19
->>>>>>> parent of c1ca5bf6... mappa
 =======
 --- !u!114 &19
 >>>>>>> parent of c1ca5bf6... mappa
@@ -1126,21 +945,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
-<<<<<<< HEAD
     x: 627.2
     y: 73.6
     width: 529
     height: 434
 =======
-=======
->>>>>>> parent of c1ca5bf6... mappa
     x: 695.2
     y: 80.8
     width: 344
     height: 425
-<<<<<<< HEAD
->>>>>>> parent of c1ca5bf6... mappa
-=======
 >>>>>>> parent of c1ca5bf6... mappa
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
@@ -1188,21 +1001,15 @@ MonoBehaviour:
       x: 0
       y: 21
 <<<<<<< HEAD
-<<<<<<< HEAD
       width: 529
       height: 413
     m_Scale: {x: 0.34440103, y: 0.34440103}
     m_Translation: {x: 264.5, y: 206.49998}
 =======
-=======
->>>>>>> parent of c1ca5bf6... mappa
       width: 344
       height: 404
     m_Scale: {x: 0.22395833, y: 0.22395833}
     m_Translation: {x: 172, y: 202}
-<<<<<<< HEAD
->>>>>>> parent of c1ca5bf6... mappa
-=======
 >>>>>>> parent of c1ca5bf6... mappa
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -1211,7 +1018,6 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -768
-<<<<<<< HEAD
 <<<<<<< HEAD
       y: -599.5917
       width: 1536
@@ -1227,25 +1033,13 @@ MonoBehaviour:
   m_defaultScale: 0.22395833
   m_LastWindowPixelSize: {x: 430, y: 531.25}
 >>>>>>> parent of c1ca5bf6... mappa
-=======
-      y: -901.9535
-      width: 1536
-      height: 1803.907
-    m_MinimalGUI: 1
-  m_defaultScale: 0.22395833
-  m_LastWindowPixelSize: {x: 430, y: 531.25}
->>>>>>> parent of c1ca5bf6... mappa
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
 <<<<<<< HEAD
-<<<<<<< HEAD
 --- !u!114 &19
-=======
---- !u!114 &20
->>>>>>> parent of c1ca5bf6... mappa
 =======
 --- !u!114 &20
 >>>>>>> parent of c1ca5bf6... mappa
