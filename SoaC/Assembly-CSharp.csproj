@@ -87,6 +87,8 @@
     <Compile Include="Assets\Kevin Iglesias\SheathScript\Scripts\CustomInspector\SheathScriptCustomInspector.cs" />
     <Compile Include="Assets\Kevin Iglesias\SheathScript\Scripts\SheathAnimatorScript.cs" />
     <Compile Include="Assets\Kevin Iglesias\SheathScript\Scripts\SheathComponentScript.cs" />
+    <Compile Include="Assets\Script\Armi\FloatingObject.cs" />
+    <Compile Include="Assets\Script\Armi\PickUpController.cs" />
     <Compile Include="Assets\Script\Camera\AvoidCameraObstruction.cs" />
     <Compile Include="Assets\Script\Camera\CameraShake.cs" />
     <Compile Include="Assets\Script\Camera\FollowPlayer.cs" />
