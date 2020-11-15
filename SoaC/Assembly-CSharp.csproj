@@ -100,6 +100,7 @@
     <Compile Include="Assets\Script\Movimenti\MyPlayer1.cs" />
     <Compile Include="Assets\Script\Nemici\Enemy.cs" />
     <Compile Include="Assets\Script\Nemici\SpawnEnemies.cs" />
+    <Compile Include="Assets\Script\Sparare\AttivaMirino.cs" />
     <Compile Include="Assets\Script\Sparare\AutoDestroy.cs" />
     <Compile Include="Assets\Script\Sparare\TPSShooter.cs" />
     <Compile Include="Assets\Script\Sparare\WeaponRotator.cs" />
