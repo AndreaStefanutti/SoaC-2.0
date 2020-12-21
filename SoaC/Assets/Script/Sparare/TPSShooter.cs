@@ -21,10 +21,12 @@ public class TPSShooter : MonoBehaviour
     float distance = 100;
 
     [SerializeField]
-    float projectileForce = 100;
+    float projectileForce = 10;
+    public float danno = 20;
 
     LayerMask hittableMask;
     LayerMask mapMask;
+    private RaycastHit hit;
 
     public GameObject Player;
     public PickUpController equipaggiato;
@@ -34,7 +36,7 @@ public class TPSShooter : MonoBehaviour
     void Start()
     {
         // Player = Player;
-        hittableMask = (1 << LayerMask.NameToLayer("Default"));
+        hittableMask = (1 << LayerMask.NameToLayer("Enemy"));
         mapMask = (1 << LayerMask.NameToLayer("Map")) | hittableMask;
 
         equiped = equipaggiato.equipped;
@@ -67,6 +69,10 @@ public class TPSShooter : MonoBehaviour
                     colRigidbody.isKinematic = false;
                     colRigidbody.AddForceAtPosition(camTransform.forward * projectileForce, hit.point, ForceMode.Impulse);
                     Debug.LogError("Hai colpito: " + hit.collider.gameObject);
+                    if (hit.collider.tag == "Enemy")
+                    {
+                        hit.collider.GetComponent<DannoNemico>().getDanno(danno);   // mi dice che quando il collide tocca il tag nemico toglie 20 danni
+                    }
                 }
 
                 else
