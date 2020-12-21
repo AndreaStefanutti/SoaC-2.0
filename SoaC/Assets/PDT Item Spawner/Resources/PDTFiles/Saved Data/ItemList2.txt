@@ -1,0 +1,9 @@
+- Custom Item List - 
+Count =1
+-
+Type =RedCube
+Prefab =RedCube
+Chance =1
+Unique =FALSE
+Pickupable =TRUE
+SpawnType =0
