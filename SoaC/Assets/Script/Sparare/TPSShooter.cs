@@ -29,6 +29,7 @@ public class TPSShooter : MonoBehaviour
     public GameObject Player;
     public PickUpController equipaggiato;
     public bool equiped;
+    public GameObject marco;
 
     void Start()
     {
@@ -38,7 +39,8 @@ public class TPSShooter : MonoBehaviour
 
         equiped = equipaggiato.equipped;
 
-
+       
+        
     }
     void Update()
     {
@@ -52,7 +54,7 @@ public class TPSShooter : MonoBehaviour
                     lineRenderer.SetPosition(1, lineRenderer.transform.InverseTransformPoint(hit.point));
                 }
             // if (Input.GetButtonDown(Sparo))
-            if (Input.GetMouseButtonDown(0))
+            if (marco.GetComponent<FixedTouchField>().Pressed)
             {
                 GameObject projectileInstance = Instantiate(projectile, lineRenderer.transform.position, Quaternion.identity);
 

@@ -17,11 +17,12 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         transform.rotation = Quaternion.LookRotation(target.position - transform.position);
        
-        transform.position = Vector3.MoveTowards(transform.position, target.position, speed);
+        transform.position = Vector3.MoveTowards(transform.position, target.position, speed/50);
         float distance = Vector3.Distance(target.position, transform.position);
-            if (distance < 0.5)
+            if (distance < 1)
         {
             anim.SetBool("isWalking", false);
             anim.SetBool("attack", true);

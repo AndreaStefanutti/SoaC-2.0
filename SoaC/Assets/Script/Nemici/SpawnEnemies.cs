@@ -26,14 +26,13 @@ public class SpawnEnemies : MonoBehaviour
         {
             xPos = Random.Range(40, 36);
             zPos = Random.Range(-13, 20);
-            Instantiate(theEnemy, new Vector3(xPos, 0, zPos), Quaternion.identity);
+            Instantiate(theEnemy, new Vector3(xPos, 3, zPos), Quaternion.identity);
             xPos = Random.Range(5, -17);
             zPos = Random.Range(18, 20);
-            Instantiate(theEnemy, new Vector3(xPos, 0, zPos), Quaternion.identity);
+            Instantiate(theEnemy, new Vector3(xPos, 3, zPos), Quaternion.identity);
             xPos = Random.Range(-18,-22);
             zPos = Random.Range(18, -26);
-            Instantiate(theEnemy, new Vector3(xPos, 0, zPos), Quaternion.identity);
-            Instantiate(theEnemy, new Vector3(xPos, 0, zPos), Quaternion.identity);
+            Instantiate(theEnemy, new Vector3(xPos, 3, zPos), Quaternion.identity);   
             yield return new WaitForSeconds(5f);
             enemyCount += 1;
         }
