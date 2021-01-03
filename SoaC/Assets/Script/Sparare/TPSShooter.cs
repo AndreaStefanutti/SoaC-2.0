@@ -68,7 +68,7 @@ public class TPSShooter : MonoBehaviour
                     if (!colRigidbody) { return; }
                     colRigidbody.isKinematic = false;
                     colRigidbody.AddForceAtPosition(camTransform.forward * projectileForce, hit.point, ForceMode.Impulse);
-                    Debug.LogError("Hai colpito: " + hit.collider.gameObject);
+                    //Debug.LogError("Hai colpito: " + hit.collider.gameObject);
                     if (hit.collider.tag == "Enemy")
                     {
                         hit.collider.GetComponent<DannoNemico>().getDanno(danno);   // mi dice che quando il collide tocca il tag nemico toglie 20 danni

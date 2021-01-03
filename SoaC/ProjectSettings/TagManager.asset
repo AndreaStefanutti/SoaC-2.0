@@ -7,6 +7,9 @@ TagManager:
   - Button
   - Enemy
   - Proiettile
+  - Stop
+  - PauseMenu
+  - Pausa
   layers:
   - Default
   - TransparentFX
@@ -19,7 +22,7 @@ TagManager:
   - Post Processing
   - Map
   - Enemy
-  - 
+  - Stop
   - 
   - 
   - 

@@ -19654,7 +19654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 2076160091}
-  speed: 1
+  speed: 2
   target: {fileID: 810523343}
 --- !u!95 &2076160091 stripped
 Animator:

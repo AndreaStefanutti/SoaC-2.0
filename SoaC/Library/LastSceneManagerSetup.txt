@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/BrokenVector/LowPolyBrickHouses/Scenes/ExampleScene.unity
+- path: Assets/Scenes/Gioco.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
