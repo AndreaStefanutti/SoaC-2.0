@@ -59,6 +59,7 @@ public class TPSShooter : MonoBehaviour
             if (marco.GetComponent<FixedTouchField>().Pressed)
             {
                 GameObject projectileInstance = Instantiate(projectile, lineRenderer.transform.position, Quaternion.identity);
+                projectileInstance.GetComponent<AutoDestroy>().enabled = true;
 
                 if (Physics.Raycast(camTransform.position, camTransform.forward, out hit, distance, hittableMask, QueryTriggerInteraction.Ignore))
                 {
