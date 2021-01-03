@@ -4,23 +4,38 @@ using UnityEngine;
 
 public class DannoPlayer : MonoBehaviour
 {
-
-    public int Vita = 50;
-    int danno = 10;
-    // Start is called before the first frame update
-    void Start()
+    public float TempoMorte;
+    public int Vita = 100;
+    int danno = 20;
+    public Animator anim;
+    public void Update()
+    {
+        if (Vita <= 0)
+        {
+            StartCoroutine(wait());
+        }
+    }
+    private void Start()
     {
         print(Vita);
-        
+        anim = GetComponent<Animator>();
+        anim.SetBool("Death", false);
     }
-
-    // Update is called once per frame
-   void CollisioneVerificata(Collision coll)
+    private void OnCollisionEnter(Collision collisione)
     {
-        if (coll.gameObject.tag == "Enemy" )
+        if (collisione.gameObject.tag == "Enemy")
         {
-            Vita -= danno;
-            print(" IL player è stato colpito");
+            Vita = Vita - danno;
+            print("Ecco la vita" + Vita);
+            Debug.LogWarning("Ecco la vita" + Vita);
         }
+    }
+    IEnumerator wait()
+    {
+        anim.SetBool("Death", true);
+        yield return new WaitForSeconds(TempoMorte);
+
+        Destroy(gameObject);
+        Debug.Log("E morto");
     }
 }
