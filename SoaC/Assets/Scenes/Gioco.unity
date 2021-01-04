@@ -9951,6 +9951,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 299851216}
   MyButton: {fileID: 527425737}
+  isStopped: 0
 --- !u!1001 &988288183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20850,6 +20851,8 @@ MonoBehaviour:
   anim: {fileID: 2076160091}
   speed: 2
   target: {fileID: 810523343}
+  pausa: {fileID: 982579939}
+  isStopped: 0
 --- !u!95 &2076160091 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 856601670124978856, guid: b14953694d54eea4eb66f453e525024c,
