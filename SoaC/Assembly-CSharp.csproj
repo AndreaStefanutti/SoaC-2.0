@@ -103,6 +103,7 @@
     <Compile Include="Assets\Script\Movimenti\MyPlayer1.cs" />
     <Compile Include="Assets\Script\Nemici\Enemy.cs" />
     <Compile Include="Assets\Script\Nemici\SpawnEnemies.cs" />
+    <Compile Include="Assets\Script\Register\AuthController.cs" />
     <Compile Include="Assets\Script\Sparare\AttivaMirino.cs" />
     <Compile Include="Assets\Script\Sparare\AutoDestroy.cs" />
     <Compile Include="Assets\Script\Sparare\TPSShooter.cs" />
@@ -119,6 +120,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\AmplifyColor\Resources\DepthMaskBlend.shader" />
+    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
     <None Include="Assets\AmplifyColor\Resources\RenderMask.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -129,6 +131,7 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\BrokenVector\LowPolyShaders\Shaders\LowPolyUnlitShader.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml" />
     <None Include="Assets\AmplifyColor\Resources\MaskBlend.shader" />
     <None Include="Assets\SimpleSky\ReadMe.txt" />
     <None Include="Assets\BrokenVector\LowPolyShaders\Shaders\LowPolyPBRShader.shader" />
@@ -327,6 +330,27 @@
     </Reference>
     <Reference Include="AmplifyColor">
       <HintPath>D:/SoaC-2.0/SoaC/Assets/AmplifyColor/Plugins/AmplifyColor.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.App">
+      <HintPath>D:/SoaC-2.0/SoaC/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Auth">
+      <HintPath>D:/SoaC-2.0/SoaC/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Platform">
+      <HintPath>D:/SoaC-2.0/SoaC/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.TaskExtension">
+      <HintPath>D:/SoaC-2.0/SoaC/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.MiniJson">
+      <HintPath>D:/SoaC-2.0/SoaC/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Compat">
+      <HintPath>D:/SoaC-2.0/SoaC/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Tasks">
+      <HintPath>D:/SoaC-2.0/SoaC/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>D:/Programmi/2019.4.11f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
