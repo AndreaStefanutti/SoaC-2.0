@@ -99,11 +99,14 @@
     <Compile Include="Assets\Script\Controller\FixedTouchField.cs" />
     <Compile Include="Assets\Script\Danno\DannoNemico.cs" />
     <Compile Include="Assets\Script\Danno\DannoPlayer.cs" />
+    <Compile Include="Assets\Script\DataBridge.cs" />
+    <Compile Include="Assets\Script\DataBridge2.cs" />
     <Compile Include="Assets\Script\Movimenti\MovimentoProva.cs" />
     <Compile Include="Assets\Script\Movimenti\MyPlayer.cs" />
     <Compile Include="Assets\Script\Movimenti\MyPlayer1.cs" />
     <Compile Include="Assets\Script\Nemici\Enemy.cs" />
     <Compile Include="Assets\Script\Nemici\SpawnEnemies.cs" />
+    <Compile Include="Assets\Script\Player.cs" />
     <Compile Include="Assets\Script\Register\AuthController.cs" />
     <Compile Include="Assets\Script\Sparare\AttivaMirino.cs" />
     <Compile Include="Assets\Script\Sparare\AutoDestroy.cs" />
@@ -144,6 +147,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\AmplifyColor\Resources\Mask.shader" />
+    <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\maven-metadata.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\AmplifyColor\Samples\Check out the full LUT Package.txt" />
@@ -330,28 +334,31 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.11f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="AmplifyColor">
-      <HintPath>C:/Users/alev9/Desktop/uni/SoaC con db/SoaC/Assets/AmplifyColor/Plugins/AmplifyColor.dll</HintPath>
+      <HintPath>D:/SoaC-2.0/SoaC/Assets/AmplifyColor/Plugins/AmplifyColor.dll</HintPath>
     </Reference>
     <Reference Include="Firebase.App">
-      <HintPath>C:/Users/alev9/Desktop/uni/SoaC con db/SoaC/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+      <HintPath>D:/SoaC-2.0/SoaC/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
     </Reference>
     <Reference Include="Firebase.Auth">
-      <HintPath>C:/Users/alev9/Desktop/uni/SoaC con db/SoaC/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+      <HintPath>D:/SoaC-2.0/SoaC/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Database">
+      <HintPath>D:/SoaC-2.0/SoaC/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
     </Reference>
     <Reference Include="Firebase.Platform">
-      <HintPath>C:/Users/alev9/Desktop/uni/SoaC con db/SoaC/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+      <HintPath>D:/SoaC-2.0/SoaC/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
     </Reference>
     <Reference Include="Firebase.TaskExtension">
-      <HintPath>C:/Users/alev9/Desktop/uni/SoaC con db/SoaC/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
+      <HintPath>D:/SoaC-2.0/SoaC/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
     </Reference>
     <Reference Include="Google.MiniJson">
-      <HintPath>C:/Users/alev9/Desktop/uni/SoaC con db/SoaC/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+      <HintPath>D:/SoaC-2.0/SoaC/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Compat">
-      <HintPath>C:/Users/alev9/Desktop/uni/SoaC con db/SoaC/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
+      <HintPath>D:/SoaC-2.0/SoaC/Assets/Parse/Plugins/Unity.Compat.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Tasks">
-      <HintPath>C:/Users/alev9/Desktop/uni/SoaC con db/SoaC/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
+      <HintPath>D:/SoaC-2.0/SoaC/Assets/Parse/Plugins/Unity.Tasks.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.11f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -714,46 +721,46 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/alev9/Desktop/uni/SoaC con db/SoaC/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/SoaC-2.0/SoaC/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/alev9/Desktop/uni/SoaC con db/SoaC/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/SoaC-2.0/SoaC/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/alev9/Desktop/uni/SoaC con db/SoaC/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/SoaC-2.0/SoaC/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/alev9/Desktop/uni/SoaC con db/SoaC/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/SoaC-2.0/SoaC/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/alev9/Desktop/uni/SoaC con db/SoaC/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/SoaC-2.0/SoaC/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/alev9/Desktop/uni/SoaC con db/SoaC/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/SoaC-2.0/SoaC/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>C:/Users/alev9/Desktop/uni/SoaC con db/SoaC/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>D:/SoaC-2.0/SoaC/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Notifications.iOS">
-      <HintPath>C:/Users/alev9/Desktop/uni/SoaC con db/SoaC/Library/ScriptAssemblies/Unity.Notifications.iOS.dll</HintPath>
+      <HintPath>D:/SoaC-2.0/SoaC/Library/ScriptAssemblies/Unity.Notifications.iOS.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/alev9/Desktop/uni/SoaC con db/SoaC/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/SoaC-2.0/SoaC/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Notifications.Android">
-      <HintPath>C:/Users/alev9/Desktop/uni/SoaC con db/SoaC/Library/ScriptAssemblies/Unity.Notifications.Android.dll</HintPath>
+      <HintPath>D:/SoaC-2.0/SoaC/Library/ScriptAssemblies/Unity.Notifications.Android.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mobile.AndroidLogcat.Editor">
-      <HintPath>C:/Users/alev9/Desktop/uni/SoaC con db/SoaC/Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll</HintPath>
+      <HintPath>D:/SoaC-2.0/SoaC/Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>C:/Users/alev9/Desktop/uni/SoaC con db/SoaC/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>D:/SoaC-2.0/SoaC/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/alev9/Desktop/uni/SoaC con db/SoaC/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/SoaC-2.0/SoaC/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/alev9/Desktop/uni/SoaC con db/SoaC/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/SoaC-2.0/SoaC/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
