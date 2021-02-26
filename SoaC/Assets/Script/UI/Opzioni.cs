@@ -10,10 +10,10 @@ public class Opzioni : MonoBehaviour
         SceneManager.LoadScene(Home);
 
     }
-    public void Volume()
+    public void Volume(string Volume)
     {
+        SceneManager.LoadScene(Volume);
 
-        
 
     }
     public void Shop(string Shop)
@@ -26,6 +26,10 @@ public class Opzioni : MonoBehaviour
 
         SceneManager.LoadScene(Credits);
 
+    }
+    public void Statistiche(string Statistiche)
+    {
+        SceneManager.LoadScene(Statistiche);
     }
 
 }
