@@ -13,7 +13,8 @@ public class PauseMenu : MonoBehaviour
    
 
     public GameObject pauseMenu;
-    public static bool isPaused;
+    public bool notPaused;
+    
     public Button MyButton;
     
     private void Start()
@@ -26,7 +27,7 @@ public class PauseMenu : MonoBehaviour
        // if (MyButton.onClick(Pausa))
        if(Input.GetButton("Pausa"))
         {
-            if (isPaused)
+            if (notPaused)
             {
                 ResumeGame();
             }
@@ -41,7 +42,7 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
-        isPaused = true;
+        notPaused = false;
        
     }
 
@@ -49,7 +50,7 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
-        isPaused = false;
+        notPaused = true;
 
 
     }

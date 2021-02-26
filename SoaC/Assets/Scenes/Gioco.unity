@@ -5197,7 +5197,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &527198629
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10143,6 +10143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 299851216}
+  notPaused: 0
   MyButton: {fileID: 527425737}
 --- !u!1001 &988288183
 PrefabInstance:
@@ -21331,6 +21332,8 @@ MonoBehaviour:
   anim: {fileID: 2076160091}
   speed: 2
   target: {fileID: 810523343}
+  pauseMenu: {fileID: 982579939}
+  tmp: {fileID: 0}
 --- !u!95 &2076160091 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 856601670124978856, guid: b14953694d54eea4eb66f453e525024c,
