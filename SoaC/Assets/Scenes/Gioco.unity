@@ -8988,7 +8988,7 @@ MonoBehaviour:
   SpeedVelocity: 3
   rotationTime: 0.25
   movimentoPlayer: {fileID: 810523342}
-  frame: 20
+  frame: 1
   counter: 0
   isShooting: 0
   fermo: 0
@@ -9051,7 +9051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a710eb31739522643a94d8987f899618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TempoMorte: 3
+  TempoMorte: 4
   Vita: 100
   anim: {fileID: 810523342}
 --- !u!1 &814905865
@@ -11687,7 +11687,7 @@ MonoBehaviour:
   projectile: {fileID: 925855428}
   camTransform: {fileID: 1931572839}
   lineRenderer: {fileID: 1181348049}
-  distance: 100
+  distance: 3
   projectileForce: 50
   danno: 20
   Player: {fileID: 810523338}
