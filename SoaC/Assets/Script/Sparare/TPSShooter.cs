@@ -32,6 +32,8 @@ public class TPSShooter : MonoBehaviour
     public PickUpController equipaggiato;
     public bool equiped;
     public GameObject marco;
+    public float fireRate;
+    private float canFire=0.0f;
     AudioSource sparo;
 
     void Start()
@@ -43,7 +45,7 @@ public class TPSShooter : MonoBehaviour
         equiped = equipaggiato.equipped;
 
         sparo = GetComponent<AudioSource>();
-        
+
     }
     void Update()
     {
@@ -59,34 +61,38 @@ public class TPSShooter : MonoBehaviour
             // if (Input.GetButtonDown(Sparo))
             if (marco.GetComponent<FixedTouchField>().Pressed)
             {
-                GameObject projectileInstance = Instantiate(projectile, lineRenderer.transform.position, Quaternion.identity);
-                sparo.Play();
-                projectileInstance.GetComponent<AutoDestroy>().enabled = true;
-
-
-                if (Physics.Raycast(camTransform.position, camTransform.forward, out hit, distance, hittableMask, QueryTriggerInteraction.Ignore))
+                if (Time.time > canFire)
                 {
-                    projectileInstance.transform.LookAt(hit.point);
+                    GameObject projectileInstance = Instantiate(projectile, lineRenderer.transform.position, Quaternion.identity);
+                    sparo.Play();
+                    projectileInstance.GetComponent<AutoDestroy>().enabled = true;
 
-                    Rigidbody colRigidbody = hit.collider.gameObject.GetComponent<Rigidbody>();
-                    if (!colRigidbody) { return; }
-                    colRigidbody.isKinematic = false;
-                    colRigidbody.AddForceAtPosition(camTransform.forward * projectileForce, hit.point, ForceMode.Impulse);
-                    //Debug.LogError("Hai colpito: " + hit.collider.gameObject);
-                    if (hit.collider.tag == "Enemy")
+                    if (Physics.Raycast(camTransform.position, camTransform.forward, out hit, distance, hittableMask, QueryTriggerInteraction.Ignore))
                     {
-                        hit.collider.GetComponent<DannoNemico>().getDanno(danno);   // mi dice che quando il collide tocca il tag nemico toglie 20 danni
+                        projectileInstance.transform.LookAt(hit.point);
+
+                        Rigidbody colRigidbody = hit.collider.gameObject.GetComponent<Rigidbody>();
+                        if (!colRigidbody) { return; }
+                        colRigidbody.isKinematic = false;
+                        colRigidbody.AddForceAtPosition(camTransform.forward * projectileForce, hit.point, ForceMode.Impulse);
+                        //Debug.LogError("Hai colpito: " + hit.collider.gameObject);
+                        if (hit.collider.tag == "Enemy")
+                        {
+                            hit.collider.GetComponent<DannoNemico>().getDanno(danno);   // mi dice che quando il collide tocca il tag nemico toglie 20 danni
+                        }
                     }
-                }
 
-                else
-                {
-                    Vector3 lineRendererWorldEndPoint = lineRenderer.transform.TransformPoint(lineRenderer.GetPosition(1));
-                    projectileInstance.transform.LookAt(lineRendererWorldEndPoint);
-                }
+                    else
+                    {
+                        Vector3 lineRendererWorldEndPoint = lineRenderer.transform.TransformPoint(lineRenderer.GetPosition(1));
+                        projectileInstance.transform.LookAt(lineRendererWorldEndPoint);
+                    }
 
-                Rigidbody projectileBody = projectileInstance.GetComponent<Rigidbody>();
-                projectileBody.AddForce(camTransform.forward * projectileForce, ForceMode.Impulse);
+                    Rigidbody projectileBody = projectileInstance.GetComponent<Rigidbody>();
+                    projectileBody.AddForce(camTransform.forward * projectileForce, ForceMode.Impulse);
+
+                    canFire = Time.time + fireRate;
+                }
             }
 
         }
