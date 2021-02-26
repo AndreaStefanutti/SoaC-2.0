@@ -32,6 +32,7 @@ public class TPSShooter : MonoBehaviour
     public PickUpController equipaggiato;
     public bool equiped;
     public GameObject marco;
+    AudioSource sparo;
 
     void Start()
     {
@@ -41,7 +42,7 @@ public class TPSShooter : MonoBehaviour
 
         equiped = equipaggiato.equipped;
 
-       
+        sparo = GetComponent<AudioSource>();
         
     }
     void Update()
@@ -59,7 +60,9 @@ public class TPSShooter : MonoBehaviour
             if (marco.GetComponent<FixedTouchField>().Pressed)
             {
                 GameObject projectileInstance = Instantiate(projectile, lineRenderer.transform.position, Quaternion.identity);
+                sparo.Play();
                 projectileInstance.GetComponent<AutoDestroy>().enabled = true;
+
 
                 if (Physics.Raycast(camTransform.position, camTransform.forward, out hit, distance, hittableMask, QueryTriggerInteraction.Ignore))
                 {
