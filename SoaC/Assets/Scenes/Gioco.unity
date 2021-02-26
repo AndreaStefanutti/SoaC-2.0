@@ -4178,11 +4178,12 @@ MonoBehaviour:
   lineRenderer: {fileID: 413251632}
   distance: 100
   projectileForce: 50
-  danno: 20
+  danno: 10
   Player: {fileID: 810523338}
   equipaggiato: {fileID: 413251625}
   equiped: 0
   marco: {fileID: 1674941961}
+  fireRate: 0.2
 --- !u!120 &413251632
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -11694,6 +11695,7 @@ MonoBehaviour:
   equipaggiato: {fileID: 1181348043}
   equiped: 0
   marco: {fileID: 1674941961}
+  fireRate: 0.47
 --- !u!82 &1181348051
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12304,11 +12306,12 @@ MonoBehaviour:
   lineRenderer: {fileID: 1220065960}
   distance: 100
   projectileForce: 50
-  danno: 20
+  danno: 100
   Player: {fileID: 810523338}
   equipaggiato: {fileID: 1220065953}
   equiped: 0
   marco: {fileID: 1674941961}
+  fireRate: 1.6
 --- !u!120 &1220065960
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -13760,11 +13763,12 @@ MonoBehaviour:
   lineRenderer: {fileID: 1374636962}
   distance: 100
   projectileForce: 50
-  danno: 20
+  danno: 50
   Player: {fileID: 810523338}
   equipaggiato: {fileID: 1374636958}
   equiped: 0
   marco: {fileID: 1674941961}
+  fireRate: 0.8
 --- !u!82 &1374636965
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14526,6 +14530,7 @@ MonoBehaviour:
   equipaggiato: {fileID: 0}
   equiped: 0
   marco: {fileID: 0}
+  fireRate: 0
 --- !u!114 &1411239401
 MonoBehaviour:
   m_ObjectHideFlags: 0
