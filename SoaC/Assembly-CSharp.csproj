@@ -104,14 +104,17 @@
     <Compile Include="Assets\Script\Nemici\Enemy.cs" />
     <Compile Include="Assets\Script\Nemici\SpawnEnemies.cs" />
     <Compile Include="Assets\Script\Register\AuthController.cs" />
+    <Compile Include="Assets\Script\Register\by.cs" />
     <Compile Include="Assets\Script\Sparare\AttivaMirino.cs" />
     <Compile Include="Assets\Script\Sparare\AutoDestroy.cs" />
     <Compile Include="Assets\Script\Sparare\TPSShooter.cs" />
     <Compile Include="Assets\Script\Sparare\WeaponRotator.cs" />
     <Compile Include="Assets\Script\Spawn\TimedSpawn.cs" />
     <Compile Include="Assets\Script\UI\Menu.cs" />
+    <Compile Include="Assets\Script\UI\NameTrasfer.cs" />
     <Compile Include="Assets\Script\UI\Opzioni.cs" />
     <Compile Include="Assets\Script\UI\PauseMenu.cs" />
+    <Compile Include="Assets\Script\UI\Registrazione.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\AmplifyColor\Resources\DepthMask.shader" />
@@ -334,23 +337,23 @@
     <Reference Include="Firebase.App">
       <HintPath>C:/Users/39366/unity proggetti/SoaC-2.0/SoaC/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
     </Reference>
+    <Reference Include="Firebase.Auth">
+      <HintPath>C:/Users/39366/unity proggetti/SoaC-2.0/SoaC/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+    </Reference>
     <Reference Include="Firebase.Platform">
       <HintPath>C:/Users/39366/unity proggetti/SoaC-2.0/SoaC/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Tasks">
-      <HintPath>C:/Users/39366/unity proggetti/SoaC-2.0/SoaC/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
+    <Reference Include="Firebase.TaskExtension">
+      <HintPath>C:/Users/39366/unity proggetti/SoaC-2.0/SoaC/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
     </Reference>
     <Reference Include="Google.MiniJson">
       <HintPath>C:/Users/39366/unity proggetti/SoaC-2.0/SoaC/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
     </Reference>
-    <Reference Include="Firebase.Auth">
-      <HintPath>C:/Users/39366/unity proggetti/SoaC-2.0/SoaC/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Compat">
       <HintPath>C:/Users/39366/unity proggetti/SoaC-2.0/SoaC/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
     </Reference>
-    <Reference Include="Firebase.TaskExtension">
-      <HintPath>C:/Users/39366/unity proggetti/SoaC-2.0/SoaC/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
+    <Reference Include="Unity.Tasks">
+      <HintPath>C:/Users/39366/unity proggetti/SoaC-2.0/SoaC/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.11f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
