@@ -12,6 +12,7 @@ public class DannoPlayer : MonoBehaviour
     {
         if (Vita <= 0)
         {
+            anim.SetBool("isDeath", true);
             StartCoroutine(wait());
         }
     }
@@ -19,7 +20,7 @@ public class DannoPlayer : MonoBehaviour
     {
         print(Vita);
         anim = GetComponent<Animator>();
-        anim.SetBool("Death", false);
+        anim.SetBool("isDeath", false);
     }
     private void OnCollisionEnter(Collision collisione)
     {
