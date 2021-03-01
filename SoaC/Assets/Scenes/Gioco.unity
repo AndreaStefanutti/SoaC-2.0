@@ -1669,7 +1669,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 190169865}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 982579945}
+        m_MethodName: Gioco
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Gioco
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &190169865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9748,6 +9759,7 @@ GameObject:
   - component: {fileID: 982579941}
   - component: {fileID: 982579940}
   - component: {fileID: 982579944}
+  - component: {fileID: 982579945}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -9854,6 +9866,18 @@ MonoBehaviour:
   pauseMenu: {fileID: 299851216}
   notPaused: 0
   MyButton: {fileID: 527425737}
+--- !u!114 &982579945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982579939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 176d2796639984a47b5927edaaf825ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &988288183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17473,7 +17497,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1723608033}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 982579945}
+        m_MethodName: Home
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Menugioco
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1723608033
 MonoBehaviour:
   m_ObjectHideFlags: 0
