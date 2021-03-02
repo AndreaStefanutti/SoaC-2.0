@@ -42,14 +42,14 @@ public class TPSShooter : MonoBehaviour
         hittableMask = (1 << LayerMask.NameToLayer("Enemy"));
         mapMask = (1 << LayerMask.NameToLayer("Map")) | hittableMask;
 
-        equiped = equipaggiato.equipped;
+        equiped = equipaggiato.slotFull;
 
         sparo = GetComponent<AudioSource>();
 
     }
     void Update()
     {
-        equiped = equipaggiato.equipped;
+        equiped = equipaggiato.equiped;
         if (equiped)
         {
             RaycastHit hit;

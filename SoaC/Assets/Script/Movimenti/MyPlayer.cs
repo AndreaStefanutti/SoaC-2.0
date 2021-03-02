@@ -21,6 +21,7 @@ public class MyPlayer : MonoBehaviour
     public GameObject boxArma;
     public GameObject marco;
     public GameObject bastone;
+    public GameObject slot;
 
 
 

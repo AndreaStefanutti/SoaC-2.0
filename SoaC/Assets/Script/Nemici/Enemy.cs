@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
     public float speed;
     public Transform target;
     public GameObject pauseMenu;
-    public PauseMenu tmp; 
+    public PauseMenu tmp;
 
     void Start()
     {

@@ -17,7 +17,7 @@ public class AttivaMirino : MonoBehaviour
 
     void Start()
     {
-        if(arma1.equipped || arma2.equipped || arma3.equipped || arma4.equipped)
+        if(arma1.slotFull || arma2.slotFull || arma3.slotFull || arma4.slotFull)
         {
             //attiva = true;
            GetComponent<LineRenderer>().enabled = true; 
@@ -41,7 +41,7 @@ public class AttivaMirino : MonoBehaviour
     void Update()
     {
 
-        if (arma1.equipped || arma2.equipped || arma3.equipped || arma4.equipped)
+        if (arma1.slotFull || arma2.slotFull || arma3.slotFull || arma4.slotFull)
         {
             GetComponent<LineRenderer>().enabled= true;
         }

@@ -13,48 +13,44 @@ public class PickUpController : MonoBehaviour
     public float pickUpRange;
     public float dropForwardForce, dropUpwardForce;
 
-    public bool equipped;
-    public static bool slotFull;
+    public bool slotFull;
+    public GameObject omino;
+    public bool equiped;
 
     private void Start()
     {
-        //Setup
-        if (!equipped)
-        {
+      
             //gunScript.enabled = false;
             rb.isKinematic = false;
             coll.isTrigger = false;
-        }
-        if (equipped)
-        {
-            // gunScript.enabled = true;
-            rb.isKinematic = true;
-            coll.isTrigger = true;
-            slotFull = true;
-        }
+            slotFull = false;
+            equiped = false;
+        
     }
 
     private void Update()
     {
+       
+        slotFull= omino.GetComponent<MyPlayer>().arma;
         //Check if player is in range and "E" is pressed
         Vector3 distanceToPlayer = player.position - transform.position;
         //if (!equipped && distanceToPlayer.magnitude <= pickUpRange && Input.GetKeyDown(KeyCode.E) && !slotFull) PickUp();
-        if (!equipped && distanceToPlayer.magnitude <= pickUpRange && !slotFull)
+        if (distanceToPlayer.magnitude <= pickUpRange && !slotFull)
         {
             //GetComponent<FloatingObject>().enabled = false;
             //GetComponent<Rigidbody>().useGravity = true;
             PickUp();
         }
         //Drop if equipped and "Q" is pressed
-        if (equipped && Input.GetKeyDown(KeyCode.Q)) Drop();
+        if (slotFull && Input.GetKeyDown(KeyCode.Q)) Drop();
 
     }
 
     private void PickUp()
     {
-        equipped = true;
+        equiped = true;
         slotFull = true;
-
+        omino.GetComponent<MyPlayer>().arma = true;
 
         //Make weapon a child of the camera and move it to default position
         transform.SetParent(gunContainer);
@@ -72,8 +68,9 @@ public class PickUpController : MonoBehaviour
 
     private void Drop()
     {
-        equipped = false;
+        equiped = false;
         slotFull = false;
+        omino.GetComponent<MyPlayer>().arma = false;
 
         //Set parent to null
         transform.SetParent(null);
