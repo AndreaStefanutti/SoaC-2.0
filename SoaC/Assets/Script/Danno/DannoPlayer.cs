@@ -5,7 +5,7 @@ using UnityEngine;
 public class DannoPlayer : MonoBehaviour
 {
     public float TempoMorte;
-    public int Vita = 100;
+    public int Vita;
     int danno = 20;
     public Animator anim;
     public void Update()
@@ -18,6 +18,7 @@ public class DannoPlayer : MonoBehaviour
     }
     private void Start()
     {
+        Vita = 100;
         print(Vita);
         anim = GetComponent<Animator>();
         anim.SetBool("isDeath", false);
