@@ -13,44 +13,42 @@ public class PickUpController : MonoBehaviour
     public float pickUpRange;
     public float dropForwardForce, dropUpwardForce;
 
-    public bool slotFull;
+    public bool equipped;
     public GameObject omino;
-    public bool equiped;
 
     private void Start()
     {
       
+        {
             //gunScript.enabled = false;
             rb.isKinematic = false;
             coll.isTrigger = false;
-            slotFull = false;
-            equiped = false;
+        }
         
     }
 
     private void Update()
     {
        
-        slotFull= omino.GetComponent<MyPlayer>().arma;
         //Check if player is in range and "E" is pressed
         Vector3 distanceToPlayer = player.position - transform.position;
         //if (!equipped && distanceToPlayer.magnitude <= pickUpRange && Input.GetKeyDown(KeyCode.E) && !slotFull) PickUp();
-        if (distanceToPlayer.magnitude <= pickUpRange && !slotFull)
+        if (!equipped && distanceToPlayer.magnitude <= pickUpRange)
         {
             //GetComponent<FloatingObject>().enabled = false;
             //GetComponent<Rigidbody>().useGravity = true;
             PickUp();
         }
         //Drop if equipped and "Q" is pressed
-        if (slotFull && Input.GetKeyDown(KeyCode.Q)) Drop();
+        if (equipped && Input.GetKeyDown(KeyCode.Q)) Drop();
 
     }
 
     private void PickUp()
     {
-        equiped = true;
-        slotFull = true;
-        omino.GetComponent<MyPlayer>().arma = true;
+        omino.GetComponent<MyPlayer>().slotFull = true;
+        equipped = true;
+
 
         //Make weapon a child of the camera and move it to default position
         transform.SetParent(gunContainer);
@@ -68,9 +66,9 @@ public class PickUpController : MonoBehaviour
 
     private void Drop()
     {
-        equiped = false;
-        slotFull = false;
-        omino.GetComponent<MyPlayer>().arma = false;
+        omino.GetComponent<MyPlayer>().slotFull = false;
+        equipped = false;
+      
 
         //Set parent to null
         transform.SetParent(null);

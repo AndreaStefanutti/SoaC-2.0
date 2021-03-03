@@ -61,7 +61,7 @@ public class PauseMenu : MonoBehaviour
     }
     public void Reset()
     {
-       Time.timeScale = 1f;
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Gioco");
     }
 

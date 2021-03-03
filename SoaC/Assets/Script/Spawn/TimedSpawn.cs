@@ -29,7 +29,7 @@ public class TimedSpawn : MonoBehaviour
         yield return new WaitForSeconds(spawnDelay);
         spawnee = Instantiate(spawnee, transform.position, transform.rotation);
         flag = false;
-        spawnee.GetComponent<PickUpController>().slotFull = false;
+        spawnee.GetComponent<PickUpController>().equipped = false;
         spawnee.GetComponent<Transform>().localScale = new Vector3(2, 2, 2);
     }
 }

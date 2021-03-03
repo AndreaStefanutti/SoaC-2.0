@@ -3658,9 +3658,8 @@ MonoBehaviour:
   pickUpRange: 1
   dropForwardForce: 1
   dropUpwardForce: 1
-  slotFull: 0
+  equipped: 0
   omino: {fileID: 810523338}
-  equiped: 0
 --- !u!54 &413251626
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8670,12 +8669,11 @@ MonoBehaviour:
   counter: 0
   isShooting: 0
   fermo: 0
-  arma: 0
+  slotFull: 0
   InputMobile: 1
   boxArma: {fileID: 1411239396}
   marco: {fileID: 1674941961}
   bastone: {fileID: 1555443214}
-  slot: {fileID: 413251624}
   joystick: {fileID: 1670119402}
 --- !u!65 &810523340
 BoxCollider:
@@ -9849,8 +9847,8 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 707332561}
-  m_PlaneDistance: 1
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -11115,9 +11113,8 @@ MonoBehaviour:
   pickUpRange: 1
   dropForwardForce: 1
   dropUpwardForce: 1
-  slotFull: 0
+  equipped: 0
   omino: {fileID: 810523338}
-  equiped: 0
 --- !u!65 &1181348044
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11849,9 +11846,8 @@ MonoBehaviour:
   pickUpRange: 1
   dropForwardForce: 1
   dropUpwardForce: 1
-  slotFull: 0
+  equipped: 0
   omino: {fileID: 810523338}
-  equiped: 0
 --- !u!54 &1220065954
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12866,7 +12862,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1307800051}
-  m_LocalRotation: {x: 0.0020004918, y: -0.023210308, z: 0.9960362, w: 0.085843846}
+  m_LocalRotation: {x: 0.0020005293, y: -0.023210399, z: 0.99603623, w: 0.08584369}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -12891,8 +12887,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 13.671793, y: 5.5713935, z: 2.0363564}
-  m_Center: {x: 0.4507513, y: 1.4762789e-16, z: 0.072888374}
+  m_Size: {x: 13.671793, y: 5.5713935, z: 3.8416462}
+  m_Center: {x: 0.4507513, y: 2.4192989e-15, z: -0.82975674}
 --- !u!1001 &1313625355
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13282,9 +13278,8 @@ MonoBehaviour:
   pickUpRange: 1
   dropForwardForce: 1
   dropUpwardForce: 1
-  slotFull: 0
+  equipped: 0
   omino: {fileID: 810523338}
-  equiped: 0
 --- !u!65 &1374636959
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20547,7 +20542,7 @@ MonoBehaviour:
   speed: 2
   target: {fileID: 810523343}
   pauseMenu: {fileID: 982579939}
-  tmp: {fileID: 982579944}
+  tmp: {fileID: 0}
 --- !u!95 &2076160091 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 856601670124978856, guid: b14953694d54eea4eb66f453e525024c,
