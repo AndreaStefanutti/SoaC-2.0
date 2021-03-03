@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class DannoPlayer : MonoBehaviour
@@ -11,8 +12,10 @@ public class DannoPlayer : MonoBehaviour
     public Animator anim;
     public GameObject Controller;
     GameObject Trasform;
+    public Image Barra;
     public void Update()
     {
+        Barra.fillAmount =(float) Vita / 100;
         if (Vita <= 0)
         {
             anim.SetBool("isDeath", true);
