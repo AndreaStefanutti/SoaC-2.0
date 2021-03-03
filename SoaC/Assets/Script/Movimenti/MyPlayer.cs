@@ -15,7 +15,7 @@ public class MyPlayer : MonoBehaviour
     public int counter;
     public bool isShooting;
     public bool fermo;
-    public bool arma;
+    public bool slotFull;
 
     public bool InputMobile;
     public GameObject boxArma;
@@ -34,16 +34,15 @@ public class MyPlayer : MonoBehaviour
         movimentoPlayer.SetBool("isShooting", false);
         movimentoPlayer.SetBool("isDeath", false);
         movimentoPlayer.SetBool("hasArmy", false);
-
         SpeedVelocity = 50f;
         rotationTime = 0.25f;
         frame = 20;
         counter = 0;
-        InputMobile = false;
-        arma = false;
-        fermo = false;
         isShooting = false;
-        
+        fermo = false;
+        slotFull = false;
+        InputMobile = false;
+
 
     }
 
@@ -88,14 +87,13 @@ public class MyPlayer : MonoBehaviour
      
         //if (Global)//toglier
         transform.Translate(transform.forward * currentSpeed * Time.deltaTime, Space.World);
-        if (boxArma.GetComponent<LineRenderer>().enabled)
+        if (slotFull)
         {
             movimentoPlayer.SetBool("hasArmy", true);
-            arma = true;
+ 
         }
         else {
             movimentoPlayer.SetBool("hasArmy", false);
-            arma = false;
 
         }
 
@@ -116,7 +114,7 @@ public class MyPlayer : MonoBehaviour
                isShooting = false;
            }
        }
-        bastone.SetActive(!arma);
+        bastone.SetActive(!slotFull);
         
 
         //else

@@ -14,32 +14,26 @@ public class PickUpController : MonoBehaviour
     public float dropForwardForce, dropUpwardForce;
 
     public bool equipped;
-    public static bool slotFull;
+    public GameObject omino;
 
     private void Start()
     {
-        //Setup
-        if (!equipped)
+      
         {
             //gunScript.enabled = false;
             rb.isKinematic = false;
             coll.isTrigger = false;
         }
-        if (equipped)
-        {
-            // gunScript.enabled = true;
-            rb.isKinematic = true;
-            coll.isTrigger = true;
-            slotFull = true;
-        }
+        
     }
 
     private void Update()
     {
+       
         //Check if player is in range and "E" is pressed
         Vector3 distanceToPlayer = player.position - transform.position;
         //if (!equipped && distanceToPlayer.magnitude <= pickUpRange && Input.GetKeyDown(KeyCode.E) && !slotFull) PickUp();
-        if (!equipped && distanceToPlayer.magnitude <= pickUpRange && !slotFull)
+        if (!equipped && distanceToPlayer.magnitude <= pickUpRange)
         {
             //GetComponent<FloatingObject>().enabled = false;
             //GetComponent<Rigidbody>().useGravity = true;
@@ -52,8 +46,8 @@ public class PickUpController : MonoBehaviour
 
     private void PickUp()
     {
+        omino.GetComponent<MyPlayer>().slotFull = true;
         equipped = true;
-        slotFull = true;
 
 
         //Make weapon a child of the camera and move it to default position
@@ -72,8 +66,9 @@ public class PickUpController : MonoBehaviour
 
     private void Drop()
     {
+        omino.GetComponent<MyPlayer>().slotFull = false;
         equipped = false;
-        slotFull = false;
+      
 
         //Set parent to null
         transform.SetParent(null);
