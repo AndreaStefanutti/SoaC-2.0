@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         anim = GetComponent<Animator>();
         tmp = pauseMenu.GetComponent<PauseMenu>();
+        speed = 2f;
 
     }
 

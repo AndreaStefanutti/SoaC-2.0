@@ -21,6 +21,7 @@ public class MyPlayer : MonoBehaviour
     public GameObject boxArma;
     public GameObject marco;
     public GameObject bastone;
+    public bool mazzata;
 
 
 
@@ -38,6 +39,7 @@ public class MyPlayer : MonoBehaviour
         rotationTime = 0.25f;
         frame = 20;
         counter = 0;
+        mazzata = false;
         isShooting = false;
         fermo = false;
         slotFull = false;
@@ -49,8 +51,8 @@ public class MyPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
 
+        
         Vector2 input;//= Vector2.zero;
         if (InputMobile) {
             input = new Vector2(joystick.input.x, joystick.input.y);
@@ -103,6 +105,12 @@ public class MyPlayer : MonoBehaviour
         {
            movimentoPlayer.SetBool("isShooting", true);
            isShooting = true;
+            if(!slotFull)
+            {
+                
+                mazzata = true;
+                
+            }
            counter=0;
        }
        else
@@ -112,7 +120,8 @@ public class MyPlayer : MonoBehaviour
            {
                movimentoPlayer.SetBool("isShooting", false);
                isShooting = false;
-           }
+                mazzata = false;
+            }
        }
         bastone.SetActive(!slotFull);
         
