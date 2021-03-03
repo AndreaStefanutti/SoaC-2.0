@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class DannoPlayer : MonoBehaviour
 {
     public float TempoMorte;
     public int Vita;
     int danno = 20;
     public Animator anim;
+    public GameObject Controller;
+    GameObject Trasform;
     public void Update()
     {
         if (Vita <= 0)
@@ -22,6 +25,7 @@ public class DannoPlayer : MonoBehaviour
         print(Vita);
         anim = GetComponent<Animator>();
         anim.SetBool("isDeath", false);
+        //Trasform = GetComponent<MyPlayer>
     }
     private void OnCollisionEnter(Collision collisione)
     {
@@ -34,6 +38,8 @@ public class DannoPlayer : MonoBehaviour
     }
     IEnumerator wait()
     {
+        Controller.SetActive(false);
+        GetComponent<MyPlayer>().SpeedVelocity = 0f;
         anim.SetBool("Death", true);
         yield return new WaitForSeconds(TempoMorte);
 

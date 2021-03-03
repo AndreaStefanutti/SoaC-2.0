@@ -9,6 +9,10 @@ public class PanelGameOver : MonoBehaviour
     public GameObject Player;
     int PanelVita;
     public float TempoMorte;
+    public void Start()
+    {
+        Time.timeScale = 1f;
+    }
     /*public void Awake() 
     {
         //PanelVita = Player.GetComponent<DannoPlayer>().Vita;
@@ -22,7 +26,7 @@ public class PanelGameOver : MonoBehaviour
             StartCoroutine(wait());
             
             
-            PanelloOn.SetActive(true);
+            //PanelloOn.SetActive(true);
             
             //Time.timeScale = 0f;
 
@@ -33,7 +37,9 @@ public class PanelGameOver : MonoBehaviour
     {
        
         yield return new WaitForSeconds(TempoMorte);
-        
+        Time.timeScale = 0f;
+        PanelloOn.SetActive(true);
+
 
 
     }
