@@ -1,14 +1,65 @@
 fileFormatVersion: 2
 guid: 210b25fa5e334f74f87c05db00ca2e49
+timeCreated: 1527784295
+licenseType: Store
 ModelImporter:
-  serializedVersion: 19301
-  internalIDToNameTable: []
-  externalObjects: {}
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Balkony-1-1
+    100002: DoorExtension-1-1
+    100004: FrontExtension-1-1
+    100006: //RootNode
+    100008: Main-1-1
+    100010: RoofWindowBig-1-1
+    100012: RoofWindowCentre-1-1
+    100014: RoofWindowsMiddle-1-1
+    100016: RoofWindowsSides-1-1
+    400000: Balkony-1-1
+    400002: DoorExtension-1-1
+    400004: FrontExtension-1-1
+    400006: //RootNode
+    400008: Main-1-1
+    400010: RoofWindowBig-1-1
+    400012: RoofWindowCentre-1-1
+    400014: RoofWindowsMiddle-1-1
+    400016: RoofWindowsSides-1-1
+    2300000: Balkony-1-1
+    2300002: DoorExtension-1-1
+    2300004: FrontExtension-1-1
+    2300006: Main-1-1
+    2300008: RoofWindowBig-1-1
+    2300010: RoofWindowCentre-1-1
+    2300012: RoofWindowsMiddle-1-1
+    2300014: RoofWindowsSides-1-1
+    3300000: Balkony-1-1
+    3300002: DoorExtension-1-1
+    3300004: FrontExtension-1-1
+    3300006: Main-1-1
+    3300008: RoofWindowBig-1-1
+    3300010: RoofWindowCentre-1-1
+    3300012: RoofWindowsMiddle-1-1
+    3300014: RoofWindowsSides-1-1
+    4300000: DoorExtension-1-1
+    4300002: RoofWindowsSides-1-1
+    4300004: Balkony-1-1
+    4300006: FrontExtension-1-1
+    4300008: Main-1-1
+    4300010: RoofWindowCentre-1-1
+    4300012: RoofWindowsMiddle-1-1
+    4300014: RoofWindowBig-1-1
+    6400000: Balkony-1-1
+    6400002: DoorExtension-1-1
+    6400004: FrontExtension-1-1
+    6400006: Main-1-1
+    6400008: RoofWindowBig-1-1
+    6400010: RoofWindowCentre-1-1
+    6400012: RoofWindowsMiddle-1-1
+    6400014: RoofWindowsSides-1-1
+    9500000: //RootNode
   materials:
-    materialImportMode: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -21,40 +72,26 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
-    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    extraUserProperties: []
     clipAnimations: []
     isReadable: 0
   meshes:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
-    useSRGBMaterialColor: 1
-    sortHierarchyByName: 1
-    importVisibility: 1
-    importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
-    fileIdsGeneration: 2
+    addColliders: 1
+    importBlendShapes: 0
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    preserveHierarchy: 0
-    skinWeightsMode: 0
-    maxBonesPerVertex: 4
-    minBoneWeight: 0.001
-    meshOptimizationFlags: -1
-    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -63,15 +100,11 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
-    tangentImportMode: 3
-    normalCalculationMode: 4
-    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
-    blendShapeNormalImportMode: 1
-    normalSmoothingSource: 0
-  referencedClips: []
-  importAnimation: 1
+    tangentImportMode: 4
+  importAnimation: 0
+  copyAvatar: 0
   humanDescription:
-    serializedVersion: 3
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -81,16 +114,14 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
-    skeletonHasParents: 1
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
-  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
