@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "936385455709",
+    "project_id": "soac-14cd3",
+    "storage_bucket": "soac-14cd3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936385455709:android:9e6e3b663d7604337e0fb4",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.SoaC"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936385455709-bar7ujont7p7iqa9e65t58r01632pujo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABq4KAjZgLWro_1a8yeYqaEJa_r16-mOA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "936385455709-bar7ujont7p7iqa9e65t58r01632pujo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "936385455709-fdf6fi3ti6iboth6tst9p0mgi5er5s85.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.DefaultCompany.SoaC"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
