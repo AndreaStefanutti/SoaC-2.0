@@ -6,22 +6,21 @@ public class MyPlayer : MonoBehaviour
 {
     public bool Global;//togliere
     float Velocity;
-    public float SpeedVelocity =50f;
-    public float rotationTime = 0.25f;
+    public float SpeedVelocity;
+    public float rotationTime;
     float currentSpeed;
     float Speed;
     public Animator movimentoPlayer;
-    public int frame =20;
-    public int counter = 0;
-    public bool isShooting= false;
-    public bool fermo=false;
-    public bool slotFull = false;
+    public int frame;
+    public int counter;
+    public bool isShooting;
+    public bool fermo;
+    public bool slotFull;
 
-    public bool InputMobile = false;
+    public bool InputMobile;
     public GameObject boxArma;
     public GameObject marco;
     public GameObject bastone;
-    
 
 
 
@@ -35,7 +34,16 @@ public class MyPlayer : MonoBehaviour
         movimentoPlayer.SetBool("isShooting", false);
         movimentoPlayer.SetBool("isDeath", false);
         movimentoPlayer.SetBool("hasArmy", false);
-        
+        SpeedVelocity = 50f;
+        rotationTime = 0.25f;
+        frame = 20;
+        counter = 0;
+        isShooting = false;
+        fermo = false;
+        slotFull = false;
+        InputMobile = false;
+
+
     }
 
     // Update is called once per frame

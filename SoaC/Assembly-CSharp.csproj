@@ -115,6 +115,7 @@
     <Compile Include="Assets\Script\UI\Menu.cs" />
     <Compile Include="Assets\Script\UI\NameTrasfer.cs" />
     <Compile Include="Assets\Script\UI\Opzioni.cs" />
+    <Compile Include="Assets\Script\UI\PanelGameOver.cs" />
     <Compile Include="Assets\Script\UI\PauseMenu.cs" />
     <Compile Include="Assets\Script\UI\Registrazione.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
