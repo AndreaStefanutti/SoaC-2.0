@@ -10,6 +10,7 @@ TagManager:
   - Stop
   - PauseMenu
   - Pausa
+  - Armi
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - Map
   - Enemy
   - Stop
-  - 
+  - Armi
   - 
   - 
   - 

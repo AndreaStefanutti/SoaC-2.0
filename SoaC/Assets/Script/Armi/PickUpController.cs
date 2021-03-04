@@ -33,8 +33,9 @@ public class PickUpController : MonoBehaviour
         //Check if player is in range and "E" is pressed
         Vector3 distanceToPlayer = player.position - transform.position;
         //if (!equipped && distanceToPlayer.magnitude <= pickUpRange && Input.GetKeyDown(KeyCode.E) && !slotFull) PickUp();
-        if (!equipped && distanceToPlayer.magnitude <= pickUpRange)
-        {
+       // if (!equipped && distanceToPlayer.magnitude <= pickUpRange)
+            if (!omino.GetComponent<MyPlayer>().slotFull && distanceToPlayer.magnitude <= pickUpRange)
+            {
             //GetComponent<FloatingObject>().enabled = false;
             //GetComponent<Rigidbody>().useGravity = true;
             PickUp();
