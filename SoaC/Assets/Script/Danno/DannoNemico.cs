@@ -29,6 +29,7 @@ public class DannoNemico : MonoBehaviour
     
         IEnumerator wait()
         {
+        GetComponent<Enemy>().speed = 0f;
         anim.SetBool("Death", true);
         yield return new WaitForSeconds(TempoMorte);
 

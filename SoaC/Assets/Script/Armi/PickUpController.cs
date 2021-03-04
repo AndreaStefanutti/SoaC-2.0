@@ -15,6 +15,7 @@ public class PickUpController : MonoBehaviour
 
     public bool equipped;
     public GameObject omino;
+    public GameObject bottone;
 
     private void Start()
     {
@@ -42,7 +43,7 @@ public class PickUpController : MonoBehaviour
         }
         //Drop if equipped and "Q" is pressed
         if (equipped && Input.GetKeyDown(KeyCode.Q)) Drop();
-
+        if (equipped && bottone.GetComponent<FixedTouchField>().Pressed) Drop();
     }
 
     private void PickUp()
@@ -65,7 +66,7 @@ public class PickUpController : MonoBehaviour
         //gunScript.enabled = true;
     }
 
-    private void Drop()
+    public void Drop()
     {
         omino.GetComponent<MyPlayer>().slotFull = false;
         equipped = false;

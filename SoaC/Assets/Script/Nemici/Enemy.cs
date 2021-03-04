@@ -7,7 +7,8 @@ public class Enemy : MonoBehaviour
     public float speed;
     public Transform target;
     public GameObject pauseMenu;
-    public PauseMenu tmp; 
+    public PauseMenu tmp;
+    public GameObject omino;
 
     void Start()
     {
@@ -20,7 +21,8 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        
+        if (omino.GetComponent<DannoPlayer>().Vita <= 0)
+            speed = 0f;
        
         if (!tmp.notPaused)
         {
