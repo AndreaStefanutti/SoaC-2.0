@@ -21,6 +21,9 @@ public class DannoNemico : MonoBehaviour
         if (vita <= 0)
         {
             StartCoroutine(wait());
+            
+
+
         }
     }
       public void getDanno(float danno)
@@ -32,14 +35,18 @@ public class DannoNemico : MonoBehaviour
         {
         GetComponent<Enemy>().speed = 0f;
         anim.SetBool("Death", true);
+
+        
+
         yield return new WaitForSeconds(TempoMorte);
 
             Destroy(gameObject);
             Debug.Log("E morto");
+        Score.Punteggio += 10;
 
 
 
-        }
+    }
 
     private void OnCollisionEnter(Collision collision)
     {

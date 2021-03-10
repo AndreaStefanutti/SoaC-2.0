@@ -28,7 +28,7 @@ public class MyPlayer : MonoBehaviour
 
     public FixedJoystick joystick;
     //public FixedTouchField touchField;
-    void start()
+    private void start()
     {
        
         movimentoPlayer = GetComponent<Animator>();
@@ -47,10 +47,18 @@ public class MyPlayer : MonoBehaviour
 
         mazzata = false;
 
+
+        //Timer.iniziale.InizializzareTempo();
+
+    }
+
+    private void Start()
+    {
+        Timer.iniziale.InizializzareTempo();
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         
 
