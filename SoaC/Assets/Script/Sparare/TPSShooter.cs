@@ -39,6 +39,7 @@ public class TPSShooter : MonoBehaviour
 
     public int munizioniCorrenti;
     public int munizioniMax;
+    public GameObject testoMunizioni;
 
     void Start()
     {
@@ -51,12 +52,14 @@ public class TPSShooter : MonoBehaviour
         sparo = GetComponent<AudioSource>();
 
         munizioniCorrenti = munizioniMax;
+
     }
     void Update()
     {
         equiped = equipaggiato.equipped;
         if (equiped)
         {
+            testoMunizioni.GetComponent<MunizioniDisplay>().munizioni = munizioniCorrenti;
             RaycastHit hit;
             if (Physics.Raycast(camTransform.position, camTransform.forward, out hit, distance, mapMask, QueryTriggerInteraction.Ignore))
                 if (Physics.Raycast(camTransform.position, camTransform.forward, out hit, distance, mapMask, QueryTriggerInteraction.Ignore))
@@ -72,6 +75,7 @@ public class TPSShooter : MonoBehaviour
                     sparo.Play();
                     projectileInstance.GetComponent<AutoDestroy>().enabled = true;
                     munizioniCorrenti--;
+                   
 
                     if (Physics.Raycast(camTransform.position, camTransform.forward, out hit, distance, hittableMask, QueryTriggerInteraction.Ignore))
                     {

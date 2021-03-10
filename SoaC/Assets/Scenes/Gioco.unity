@@ -3968,7 +3968,8 @@ MonoBehaviour:
   marco: {fileID: 1674941961}
   fireRate: 0.2
   munizioniCorrenti: 0
-  munizioniMax: 10
+  munizioniMax: 250
+  testoMunizioni: {fileID: 1843585701}
 --- !u!120 &413251632
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -9818,7 +9819,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 914177213}
-  m_LocalRotation: {x: 0.022515148, y: -0.0055775642, z: -0.24039039, w: -0.97039914}
+  m_LocalRotation: {x: 0.022515118, y: -0.005577594, z: -0.24039036, w: -0.9703992}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -11905,7 +11906,8 @@ MonoBehaviour:
   marco: {fileID: 1674941961}
   fireRate: 0.47
   munizioniCorrenti: 0
-  munizioniMax: 5
+  munizioniMax: 150
+  testoMunizioni: {fileID: 1843585701}
 --- !u!82 &1181348051
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12544,7 +12546,8 @@ MonoBehaviour:
   marco: {fileID: 1674941961}
   fireRate: 1.6
   munizioniCorrenti: 0
-  munizioniMax: 0
+  munizioniMax: 15
+  testoMunizioni: {fileID: 1843585701}
 --- !u!120 &1220065960
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -14089,7 +14092,8 @@ MonoBehaviour:
   marco: {fileID: 1674941961}
   fireRate: 0.8
   munizioniCorrenti: 0
-  munizioniMax: 0
+  munizioniMax: 30
+  testoMunizioni: {fileID: 1843585701}
 --- !u!82 &1374636965
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14793,6 +14797,7 @@ MonoBehaviour:
   fireRate: 0
   munizioniCorrenti: 0
   munizioniMax: 0
+  testoMunizioni: {fileID: 0}
 --- !u!114 &1411239401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19683,10 +19688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5632cdad66dde4a4d85bd96f6118c97e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arma1: {fileID: 1181348042}
-  arma2: {fileID: 1220065952}
-  arma3: {fileID: 1374636957}
-  arma4: {fileID: 413251624}
+  munizioni: 0
   textValue: {fileID: 320513685}
 --- !u!222 &1843585704
 CanvasRenderer:
