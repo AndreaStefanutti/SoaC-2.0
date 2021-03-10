@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 ///<summary>
 ///
@@ -36,6 +37,9 @@ public class TPSShooter : MonoBehaviour
     private float canFire=0.0f;
     AudioSource sparo;
 
+    public int munizioniCorrenti;
+    public int munizioniMax;
+
     void Start()
     {
         // Player = Player;
@@ -46,6 +50,7 @@ public class TPSShooter : MonoBehaviour
 
         sparo = GetComponent<AudioSource>();
 
+        munizioniCorrenti = munizioniMax;
     }
     void Update()
     {
@@ -59,13 +64,14 @@ public class TPSShooter : MonoBehaviour
                     lineRenderer.SetPosition(1, lineRenderer.transform.InverseTransformPoint(hit.point));
                 }
             // if (Input.GetButtonDown(Sparo))
-            if (marco.GetComponent<FixedTouchField>().Pressed)
+            if (marco.GetComponent<FixedTouchField>().Pressed && munizioniCorrenti>0)
             {
                 if (Time.time > canFire)
                 {
                     GameObject projectileInstance = Instantiate(projectile, lineRenderer.transform.position, Quaternion.identity);
                     sparo.Play();
                     projectileInstance.GetComponent<AutoDestroy>().enabled = true;
+                    munizioniCorrenti--;
 
                     if (Physics.Raycast(camTransform.position, camTransform.forward, out hit, distance, hittableMask, QueryTriggerInteraction.Ignore))
                     {

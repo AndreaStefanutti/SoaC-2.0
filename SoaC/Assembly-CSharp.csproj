@@ -115,6 +115,7 @@
     <Compile Include="Assets\Script\UI\GameOver.cs" />
     <Compile Include="Assets\Script\UI\LoginHome.cs" />
     <Compile Include="Assets\Script\UI\Menu.cs" />
+    <Compile Include="Assets\Script\UI\MunizioniDisplay.cs" />
     <Compile Include="Assets\Script\UI\NameTrasfer.cs" />
     <Compile Include="Assets\Script\UI\Opzioni.cs" />
     <Compile Include="Assets\Script\UI\PanelGameOver.cs" />
