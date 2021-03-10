@@ -7,6 +7,7 @@ public class DannoNemico : MonoBehaviour
     public float TempoMorte;
     public float vita = 100;
     public Animator anim;
+    public GameObject omino;
     void Start()
     {
        
@@ -40,5 +41,13 @@ public class DannoNemico : MonoBehaviour
 
         }
 
-    
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Mazza" && omino.GetComponent<MyPlayer>().mazzata)
+        {
+            vita = 0;
+        }
+    }
+
+
 }

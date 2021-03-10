@@ -11,6 +11,8 @@ TagManager:
   - PauseMenu
   - Pausa
   - Armi
+  - Acqua
+  - Mazza
   layers:
   - Default
   - TransparentFX

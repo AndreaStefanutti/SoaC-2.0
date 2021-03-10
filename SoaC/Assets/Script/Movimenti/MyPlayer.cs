@@ -22,6 +22,8 @@ public class MyPlayer : MonoBehaviour
     public GameObject marco;
     public GameObject bastone;
 
+    public bool mazzata;
+
 
 
     public FixedJoystick joystick;
@@ -43,6 +45,7 @@ public class MyPlayer : MonoBehaviour
         slotFull = false;
         InputMobile = false;
 
+        mazzata = false;
 
     }
 
@@ -104,6 +107,11 @@ public class MyPlayer : MonoBehaviour
            movimentoPlayer.SetBool("isShooting", true);
            isShooting = true;
            counter=0;
+            if (!slotFull)
+            {
+                mazzata = true;
+            }
+
        }
        else
        {
@@ -112,6 +120,7 @@ public class MyPlayer : MonoBehaviour
            {
                movimentoPlayer.SetBool("isShooting", false);
                isShooting = false;
+                mazzata = false;
            }
        }
         bastone.SetActive(!slotFull);
