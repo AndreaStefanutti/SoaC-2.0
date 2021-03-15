@@ -14,14 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1543
     y: -376
     width: 1905
     height: 982
+=======
+    x: 0
+    y: 43
+    width: 1366
+    height: 725
+>>>>>>> Davide
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 7}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
 --- !u!114 &2
@@ -40,6 +47,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 868
     y: 0
     width: 652
@@ -51,6 +59,12 @@ MonoBehaviour:
     y: 0
     width: 467
     height: 404
+=======
+    x: 579
+    y: 0
+    width: 508
+    height: 397
+>>>>>>> Davide
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
 >>>>>>> origin/Davide
@@ -78,6 +92,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1905
     height: 932
   m_MinSize: {x: 881, y: 492}
@@ -88,6 +103,14 @@ MonoBehaviour:
 =======
   controlID: 108
 >>>>>>> origin/Davide
+=======
+    width: 1366
+    height: 675
+  m_MinSize: {x: 881, y: 492}
+  m_MaxSize: {x: 16006, y: 14042}
+  vertical: 0
+  controlID: 170
+>>>>>>> Davide
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -104,6 +127,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1520
     y: 0
     width: 385
@@ -116,6 +140,14 @@ MonoBehaviour:
 >>>>>>> origin/Davide
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+    x: 1087
+    y: 0
+    width: 279
+    height: 675
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+>>>>>>> Davide
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -139,6 +171,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 281
     height: 584
   m_MinSize: {x: 200, y: 200}
@@ -149,6 +182,12 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
 >>>>>>> origin/Davide
+=======
+    width: 251
+    height: 397
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+>>>>>>> Davide
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -171,6 +210,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 584
     width: 1520
     height: 348
@@ -179,6 +219,11 @@ MonoBehaviour:
     width: 1089
     height: 271
 >>>>>>> origin/Davide
+=======
+    y: 397
+    width: 1087
+    height: 278
+>>>>>>> Davide
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 14}
@@ -207,8 +252,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1905
     height: 982
+=======
+    width: 1366
+    height: 725
+>>>>>>> Davide
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &8
@@ -228,7 +278,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1905
+=======
+    width: 1366
+>>>>>>> Davide
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -249,8 +303,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 962
     width: 1905
+=======
+    y: 705
+    width: 1366
+>>>>>>> Davide
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -274,6 +333,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1520
     height: 932
   m_MinSize: {x: 605, y: 492}
@@ -282,12 +342,19 @@ MonoBehaviour:
   controlID: 128
 =======
     width: 1089
+=======
+    width: 1087
+>>>>>>> Davide
     height: 675
   m_MinSize: {x: 605, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 109
 >>>>>>> origin/Davide
+=======
+  controlID: 100
+>>>>>>> Davide
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -309,6 +376,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1520
     height: 584
   m_MinSize: {x: 605, y: 221}
@@ -323,6 +391,14 @@ MonoBehaviour:
   vertical: 0
   controlID: 110
 >>>>>>> origin/Davide
+=======
+    width: 1087
+    height: 397
+  m_MinSize: {x: 605, y: 221}
+  m_MaxSize: {x: 12005, y: 4021}
+  vertical: 0
+  controlID: 101
+>>>>>>> Davide
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -339,6 +415,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 281
     y: 0
     width: 587
@@ -353,6 +430,14 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
 >>>>>>> origin/Davide
+=======
+    x: 251
+    y: 0
+    width: 328
+    height: 397
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+>>>>>>> Davide
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -375,7 +460,7 @@ MonoBehaviour:
   m_MaxSize: {x: 2048, y: 2048}
   m_TitleContent:
     m_Text: Asset Store
-    m_Image: {fileID: -7444545952099596278, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -8693916549880196297, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -401,7 +486,7 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -413,10 +498,16 @@ MonoBehaviour:
     height: 327
 =======
     x: 0
+<<<<<<< HEAD
     y: 477
     width: 1088
     height: 250
 >>>>>>> origin/Davide
+=======
+    y: 470
+    width: 1086
+    height: 257
+>>>>>>> Davide
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -437,6 +528,7 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Script/UI
   m_LastFoldersGridSize: -1
+<<<<<<< HEAD
   m_LastProjectPath: C:\Users\alev9\Desktop\cartelle\uni\Mobile Computing\Soac-2.0\SoaC
   m_LockTracker:
     m_IsLocked: 0
@@ -452,6 +544,16 @@ MonoBehaviour:
     m_LastClickedID: 25646
     m_ExpandedIDs: 000000005446000056460000584600005a4600005c4600005e46000060460000624600006446000066460000684600006a4600006c460000b446000000ca9a3b
 >>>>>>> origin/Davide
+=======
+  m_LastProjectPath: C:\Users\39366\unity proggetti\SoaC-2.0\SoaC
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 371}
+    m_SelectedIDs: 7e640000
+    m_LastClickedID: 25726
+    m_ExpandedIDs: 00000000aa460000ac460000ae460000b0460000b2460000b4460000b6460000b8460000ba460000bc460000be460000c0460000c24600001a47000000ca9a3b
+>>>>>>> Davide
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -480,10 +582,14 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000284600002a4600002c4600002e46000030460000324600003446000036460000384600003a4600003c4600003e46000040460000
 =======
     m_ExpandedIDs: 000000005446000056460000584600005a4600005c4600005e46000060460000624600006446000066460000684600006a4600006c460000
 >>>>>>> origin/Davide
+=======
+    m_ExpandedIDs: 00000000aa460000ac460000ae460000b0460000b2460000b4460000b6460000b8460000ba460000bc460000be460000c0460000c2460000
+>>>>>>> Davide
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -555,11 +661,12 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 3063
     y: -346
@@ -571,6 +678,12 @@ MonoBehaviour:
     width: 276
     height: 654
 >>>>>>> origin/Davide
+=======
+    x: 1087
+    y: 73
+    width: 278
+    height: 654
+>>>>>>> Davide
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []
@@ -583,7 +696,11 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
+<<<<<<< HEAD
   m_LastVerticalScrollValue: 100
+=======
+  m_LastVerticalScrollValue: 0
+>>>>>>> Davide
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -600,7 +717,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
-    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -620,16 +737,27 @@ MonoBehaviour:
 =======
     x: 0
     y: 73
+<<<<<<< HEAD
     width: 201
     height: 383
+=======
+    width: 250
+    height: 376
+>>>>>>> Davide
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 263c0000
       m_LastClickedID: 15398
       m_ExpandedIDs: 3ce6ffff3efbffff983c0000
 >>>>>>> origin/Davide
+=======
+      m_SelectedIDs: 4e6d0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: a6faffffd03a0000d63c0000923d0000
+>>>>>>> Davide
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: Canvas
@@ -669,11 +797,12 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 8634526014445323508, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 1824
     y: -346
@@ -685,6 +814,12 @@ MonoBehaviour:
     width: 418
     height: 383
 >>>>>>> origin/Davide
+=======
+    x: 251
+    y: 73
+    width: 326
+    height: 376
+>>>>>>> Davide
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 9cc1d50bf8ec5c04ea648eea7423ca2f
@@ -697,6 +832,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: -31.108097, y: 0.69927204, z: -4.837751}
     speed: 2
     m_Value: {x: -31.108097, y: 0.69927204, z: -4.837751}
@@ -705,6 +841,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 960, y: 540, z: 0}
 >>>>>>> origin/Davide
+=======
+    m_Target: {x: 960, y: 540, z: 0}
+    speed: 2
+    m_Value: {x: 960, y: 540, z: 0}
+>>>>>>> Davide
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -763,10 +904,16 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.04335912, y: 0.07635314, z: 0.00332347, w: 0.9961321}
   m_Size:
+<<<<<<< HEAD
     m_Target: 749.8087
     speed: 2
     m_Value: 749.8087
 >>>>>>> origin/Davide
+=======
+    m_Target: 1101.4536
+    speed: 2
+    m_Value: 1101.4536
+>>>>>>> Davide
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -784,7 +931,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0.038989317, y: 0.005098474, z: -0.0001989738, w: 0.99922895}
+  m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -807,11 +954,12 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
-    m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 2411
     y: -346
@@ -823,6 +971,12 @@ MonoBehaviour:
     width: 465
     height: 383
 >>>>>>> origin/Davide
+=======
+    x: 579
+    y: 73
+    width: 506
+    height: 376
+>>>>>>> Davide
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -869,6 +1023,7 @@ MonoBehaviour:
       x: 0
       y: 21
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 650
       height: 542
     m_Scale: {x: 0.33854166, y: 0.33854166}
@@ -879,6 +1034,12 @@ MonoBehaviour:
     m_Scale: {x: 0.2421875, y: 0.2421875}
     m_Translation: {x: 232.5, y: 181}
 >>>>>>> origin/Davide
+=======
+      width: 506
+      height: 355
+    m_Scale: {x: 0.26354167, y: 0.26354167}
+    m_Translation: {x: 253, y: 177.5}
+>>>>>>> Davide
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -886,6 +1047,7 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -960
+<<<<<<< HEAD
 <<<<<<< HEAD
       y: -800.4923
       width: 1920
@@ -901,6 +1063,14 @@ MonoBehaviour:
   m_defaultScale: 0.2421875
   m_LastWindowPixelSize: {x: 465, y: 383}
 >>>>>>> origin/Davide
+=======
+      y: -673.51776
+      width: 1920
+      height: 1347.0355
+    m_MinimalGUI: 1
+  m_defaultScale: 0.26354167
+  m_LastWindowPixelSize: {x: 506, y: 376}
+>>>>>>> Davide
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -922,7 +1092,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Console
-    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:

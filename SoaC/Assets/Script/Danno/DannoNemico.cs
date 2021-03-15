@@ -8,8 +8,6 @@ public class DannoNemico : MonoBehaviour
     public float vita = 100;
     public Animator anim;
     public GameObject omino;
-    public GameObject mazza;
-
     void Start()
     {
        
@@ -20,12 +18,13 @@ public class DannoNemico : MonoBehaviour
 
     public void Update()
     {
-        
         if (vita <= 0)
         {
             StartCoroutine(wait());
+            
+
+
         }
-        
     }
       public void getDanno(float danno)
         {
@@ -36,21 +35,26 @@ public class DannoNemico : MonoBehaviour
         {
         GetComponent<Enemy>().speed = 0f;
         anim.SetBool("Death", true);
+
+        
+
         yield return new WaitForSeconds(TempoMorte);
 
             Destroy(gameObject);
             Debug.Log("E morto");
+        Score.Punteggio += 10;
 
 
 
-        }
+    }
 
-    private void OnCollisionEnter(Collision collisione)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (collisione.gameObject.tag == "Mazza" && omino.GetComponent<MyPlayer>().mazzata)
+        if (collision.gameObject.tag == "Mazza" && omino.GetComponent<MyPlayer>().mazzata)
         {
             vita = 0;
         }
     }
+
 
 }

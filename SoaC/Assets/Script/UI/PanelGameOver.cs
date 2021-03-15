@@ -7,7 +7,7 @@ public class PanelGameOver : MonoBehaviour
 {
     public GameObject PanelloOn;
     public GameObject Player;
-    int PanelVita;
+    float PanelVita;
     public float TempoMorte;
     public void Start()
     {
