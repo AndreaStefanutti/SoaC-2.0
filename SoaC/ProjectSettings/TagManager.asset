@@ -10,11 +10,8 @@ TagManager:
   - Stop
   - PauseMenu
   - Pausa
-<<<<<<< HEAD
-=======
   - Armi
   - Acqua
->>>>>>> Davide
   - Mazza
   layers:
   - Default
@@ -29,7 +26,7 @@ TagManager:
   - Map
   - Enemy
   - Stop
-  - mazza
+  - Armi
   - 
   - 
   - 

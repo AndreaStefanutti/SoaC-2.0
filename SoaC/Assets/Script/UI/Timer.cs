@@ -25,18 +25,26 @@ public class Timer : MonoBehaviour
 
 
     }
+
+    private void Update()
+    {
+        tempoTrascorso = tempoTrascorso + Time.deltaTime;
+        tempoCronometro = TimeSpan.FromSeconds(tempoTrascorso);
+        string tempoCronometratoStr = "tempo:" + tempoCronometro.ToString("mm':'ss':'ff");
+        Cronometro.text = tempoCronometratoStr;
+    }
     public void InizializzareTempo()
     {
         timerBoll = true;
-        tempoTrascorso = 0f;
-        StartCoroutine(ActUpdate());
+        //tempoTrascorso = 0f;
+       // StartCoroutine(ActUpdate());
     }
     public void TempoFine()
     {
         timerBoll = false;
        
     }
-    private IEnumerator ActUpdate()
+   /* private IEnumerator ActUpdate()
     {
         while(timerBoll)
         {
@@ -45,11 +53,8 @@ public class Timer : MonoBehaviour
             tempoCronometro = TimeSpan.FromSeconds(tempoTrascorso);
             string tempoCronometratoStr = "Tempo: " + tempoCronometro.ToString("mm':'ss':'ff");
             Cronometro.text = tempoCronometratoStr;
-
+           
             yield return null;
         }
-    }
-
-
-
+    }*/
 }

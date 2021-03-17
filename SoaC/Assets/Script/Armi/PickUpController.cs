@@ -15,6 +15,7 @@ public class PickUpController : MonoBehaviour
 
     public bool equipped;
     public GameObject omino;
+    public GameObject bottone;
 
     private void Start()
     {
@@ -33,15 +34,16 @@ public class PickUpController : MonoBehaviour
         //Check if player is in range and "E" is pressed
         Vector3 distanceToPlayer = player.position - transform.position;
         //if (!equipped && distanceToPlayer.magnitude <= pickUpRange && Input.GetKeyDown(KeyCode.E) && !slotFull) PickUp();
-        if (!equipped && distanceToPlayer.magnitude <= pickUpRange)
-        {
+       // if (!equipped && distanceToPlayer.magnitude <= pickUpRange)
+            if (!omino.GetComponent<MyPlayer>().slotFull && distanceToPlayer.magnitude <= pickUpRange)
+            {
             //GetComponent<FloatingObject>().enabled = false;
             //GetComponent<Rigidbody>().useGravity = true;
             PickUp();
         }
         //Drop if equipped and "Q" is pressed
         if (equipped && Input.GetKeyDown(KeyCode.Q)) Drop();
-
+        if (equipped && bottone.GetComponent<FixedTouchField>().Pressed) Drop();
     }
 
     private void PickUp()
@@ -64,7 +66,7 @@ public class PickUpController : MonoBehaviour
         //gunScript.enabled = true;
     }
 
-    private void Drop()
+    public void Drop()
     {
         omino.GetComponent<MyPlayer>().slotFull = false;
         equipped = false;

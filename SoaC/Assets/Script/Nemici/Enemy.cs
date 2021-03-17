@@ -7,21 +7,22 @@ public class Enemy : MonoBehaviour
     public float speed;
     public Transform target;
     public GameObject pauseMenu;
-    public PauseMenu tmp; 
+    public PauseMenu tmp;
+    public GameObject omino;
 
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         anim = GetComponent<Animator>();
         tmp = pauseMenu.GetComponent<PauseMenu>();
-        speed = 2f;
 
     }
 
 
     void Update()
     {
-        
+        if (omino.GetComponent<DannoPlayer>().Vita <= 0)
+            speed = 0f;
        
         if (!tmp.notPaused)
         {
