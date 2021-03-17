@@ -55,7 +55,7 @@ public class DannoPlayer : MonoBehaviour
     {
         Controller.SetActive(false);
         GetComponent<MyPlayer>().SpeedVelocity = 0f;
-        anim.SetBool("Death", true);
+        anim.SetBool("isDeath", true);
         yield return new WaitForSeconds(TempoMorte);
 
         Destroy(gameObject);

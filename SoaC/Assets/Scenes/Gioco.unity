@@ -274,7 +274,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22914993}
-  m_LocalRotation: {x: 0.000000029802322, y: -0, z: -0.08832261, w: -0.99609196}
+  m_LocalRotation: {x: -0, y: -0, z: -0.08832252, w: -0.99609196}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7450,7 +7450,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 707332557}
-  m_LocalRotation: {x: 0.2889383, y: 0.36348706, z: -0.119682185, w: 0.8775352}
+  m_LocalRotation: {x: 0.28893828, y: 0.36348706, z: -0.11968217, w: 0.8775352}
   m_LocalPosition: {x: -37.105904, y: 5.662618, z: -8.490032}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10093,7 +10093,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 914177213}
-  m_LocalRotation: {x: 0.023056641, y: -0.0025363564, z: -0.10931417, w: -0.9937366}
+  m_LocalRotation: {x: 0.023056597, y: -0.0025363266, z: -0.109314136, w: -0.99373657}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -13760,7 +13760,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1307800051}
-  m_LocalRotation: {x: 0.0024989021, y: -0.02316202, z: 0.9939611, w: 0.10723137}
+  m_LocalRotation: {x: 0.0024988353, y: -0.023162104, z: 0.99396116, w: 0.10723129}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -20655,7 +20655,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1931572839}
   - component: {fileID: 1931572841}
-  - component: {fileID: 1931572840}
   m_Layer: 9
   m_Name: Occhio
   m_TagString: Untagged
@@ -20677,14 +20676,6 @@ Transform:
   m_Father: {fileID: 1411239397}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!81 &1931572840
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931572838}
-  m_Enabled: 1
 --- !u!20 &1931572841
 Camera:
   m_ObjectHideFlags: 0
