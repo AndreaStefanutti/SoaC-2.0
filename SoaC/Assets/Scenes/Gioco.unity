@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 905082700}
-  m_IndirectSpecularColor: {r: 0.35512316, g: 0.4626049, b: 0.4989094, a: 1}
+  m_IndirectSpecularColor: {r: 0.35512224, g: 0.46264574, b: 0.49890855, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -274,7 +274,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22914993}
-  m_LocalRotation: {x: 0.000000029802322, y: -0, z: -0.08832261, w: -0.99609196}
+  m_LocalRotation: {x: 0.00000008940697, y: 0.000000059604645, z: -0.08832264, w: -0.99609196}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -874,12 +874,12 @@ PrefabInstance:
     - target: {fileID: 4679417457580033065, guid: 29d3dc83ad297fb459ffbd677814e31d,
         type: 3}
       propertyPath: m_Radius
-      value: 1.4291377
+      value: 2.1319954
       objectReference: {fileID: 0}
     - target: {fileID: 4679417457580033065, guid: 29d3dc83ad297fb459ffbd677814e31d,
         type: 3}
       propertyPath: m_Center.z
-      value: 0.16617775
+      value: -0.0040841103
       objectReference: {fileID: 0}
     - target: {fileID: 4679417457580033065, guid: 29d3dc83ad297fb459ffbd677814e31d,
         type: 3}
@@ -7450,7 +7450,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 707332557}
-  m_LocalRotation: {x: 0.2889383, y: 0.36348706, z: -0.119682185, w: 0.8775352}
+  m_LocalRotation: {x: 0.28893828, y: 0.36348698, z: -0.11968214, w: 0.8775352}
   m_LocalPosition: {x: -37.105904, y: 5.662618, z: -8.490032}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10093,7 +10093,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 914177213}
-  m_LocalRotation: {x: 0.023056641, y: -0.0025363564, z: -0.10931417, w: -0.9937366}
+  m_LocalRotation: {x: 0.023056744, y: -0.0025362668, z: -0.10931422, w: -0.99373657}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -13760,7 +13760,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1307800051}
-  m_LocalRotation: {x: 0.0024989021, y: -0.02316202, z: 0.9939611, w: 0.10723137}
+  m_LocalRotation: {x: 0.002498865, y: -0.023162028, z: 0.9939611, w: 0.10723138}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -20655,7 +20655,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1931572839}
   - component: {fileID: 1931572841}
-  - component: {fileID: 1931572840}
   m_Layer: 9
   m_Name: Occhio
   m_TagString: Untagged
@@ -20677,14 +20676,6 @@ Transform:
   m_Father: {fileID: 1411239397}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!81 &1931572840
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931572838}
-  m_Enabled: 1
 --- !u!20 &1931572841
 Camera:
   m_ObjectHideFlags: 0
