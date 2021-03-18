@@ -14,14 +14,24 @@ public class AuthController : MonoBehaviour
 {
     public Text emailInput, PasswordInput;
 
+
+    int daje = 0; 
+
+    
+
+
+
     public TextMeshProUGUI msg;  //login corretto con anonimo
     public TextMeshProUGUI msg1;  // logout corretto
     public TextMeshProUGUI msg2;  //registrazione completata
-    public TextMeshProUGUI msg3;
+    public TextMeshProUGUI msg3;  //login errato
     public TextMeshProUGUI msg4;  //Password troppo corta
-    public TextMeshProUGUI msg5;  //email non valida
-
-    public InputField InputField;
+    public TextMeshProUGUI msg5;  //Inserire Email
+    public TextMeshProUGUI msg6; //pasw mancante
+    public TextMeshProUGUI msg7;  // email non valida
+    public TextMeshProUGUI msg8;  //pasw sbagliata(login)
+ 
+    //public InputField InputField;
     
 
     
@@ -38,8 +48,17 @@ public class AuthController : MonoBehaviour
             {
                 Firebase.FirebaseException e = task.Exception.Flatten().InnerExceptions[0] as Firebase.FirebaseException;
 
+
+                Disattiva();
+                msg3.gameObject.SetActive(true);
+                
                 GetErrorrMessage((AuthError)e.ErrorCode);
-                msg3.text = "LoginErrato";
+
+               // msg3.text = "LoginErrato";
+               // Disattiva();
+                
+                //msg3.gameObject.SetActive(true);
+                
                 return;
 
             }
@@ -48,38 +67,114 @@ public class AuthController : MonoBehaviour
                 Firebase.FirebaseException e = task.Exception.Flatten().InnerExceptions[0] as Firebase.FirebaseException;
 
                 GetErrorrMessage((AuthError)e.ErrorCode);
+
+                Disattiva();
+                msg3.text = "LoginErrato";
+                msg3.gameObject.SetActive(true);
+
                 return;
 
             }
-            /*if (task.IsCompleted)
+            if (task.IsCompleted)
             {
-              
+                
                 print("utente loggato correttamente");
+                daje = 1;
+                LoginCOrretto();
 
-                msg.text = "Login OK";
-            }*/
+
+                  //msg.text = "Login OK";
+                
+                msg.gameObject.SetActive(true);
+               // LoginCorretto();
+            }
 
 
 
         }));
 
     }
+    public void LoginCOrretto()
+    {
+        if (daje == 1)
+        {
+            msg.gameObject.SetActive(true);
+            StartCoroutine(Wait());
+        }
+    }
 
-    /*public void MessaggiRegister()
-     {   if (InputField.text.Length < 6)
-         {
-             print("d");
-             msg4.gameObject.SetActive(true);
-             print("b");
+    public void MessaggiRegister()
+     {
+        if (VerificaEmail()==false)
 
-         }
-         else
-         {
-             msg2.gameObject.SetActive(true);
-             print("Registrazione effettuata");
-         }
-     }
-    */
+        {
+
+
+            print("email non corretta");
+            //Disattiva();
+            msg7.gameObject.SetActive(true);
+            StartCoroutine(Wait());
+
+        }
+
+         if (VerificaPassword()==false){
+            
+                // Disattiva();
+                msg4.gameObject.SetActive(true);
+                StartCoroutine(Wait());
+            } 
+        if(VerificaEmail() == true && VerificaPassword() == true)
+        {
+            msg2.gameObject.SetActive(true);
+            StartCoroutine(Wait());
+        }
+        
+
+    }
+
+    private Boolean VerificaEmail()
+    {
+        if (emailInput.text.IndexOf("@") == -1 || emailInput.text.IndexOf(".") == -1)
+            return false;
+        else return true;
+
+    }
+
+    private Boolean VerificaPassword()
+    {
+        if (PasswordInput.text.Length < 6)
+            return false;
+        else return true;
+    }
+
+    public void MessaggiLogin()
+    {
+        if (VerificaEmail() == false)
+
+        {
+
+
+            print("email non corretta");
+            //Disattiva();
+            msg7.gameObject.SetActive(true);
+            StartCoroutine(Wait());
+
+        }
+
+        if (VerificaPassword() == false)
+        {
+
+            // Disattiva();
+            msg4.gameObject.SetActive(true);
+            StartCoroutine(Wait());
+        }
+        /*if (VerificaEmail() == true && VerificaPassword() == true)
+        {
+            msg.gameObject.SetActive(true);
+            StartCoroutine(Wait());
+        }*/
+    }
+    
 
 
 
@@ -127,6 +222,7 @@ public class AuthController : MonoBehaviour
     }
     public void LoginCorretto()
     {
+        Disattiva();
         msg.gameObject.SetActive(true);
         print("utente loggato correttamente con l'anonimo");
 
@@ -141,9 +237,22 @@ public class AuthController : MonoBehaviour
     }
     public void LogoutCorretto()
     {
+        Disattiva();
         msg1.gameObject.SetActive(true);
         print("Logout effettuato ");
+
+
+
+
         
+
+    }
+
+    IEnumerator Wait()
+    {
+        
+        yield return new WaitForSeconds(3);
+        Disattiva();
 
     }
 
@@ -152,6 +261,8 @@ public class AuthController : MonoBehaviour
     {
         if(emailInput.text.Equals("") && PasswordInput.text.Equals(""))
         {
+            Disattiva();
+            msg5.gameObject.SetActive(true);
             print("please inserisci email e password per registrarti");
             return;
         }
@@ -173,7 +284,10 @@ public class AuthController : MonoBehaviour
              }
              if (task.IsCompleted)
              {
-                 print("registrazione completata");
+                 msg2.gameObject.SetActive(true);
+                 //print("registrazione completata");
+                 //Disattiva();
+                 
              }
 
          }));
@@ -184,20 +298,36 @@ void GetErrorrMessage(AuthError errorCode)
         string msg = "";
         msg = errorCode.ToString();
 
-        switch (errorCode)
+       switch (errorCode)
         {
+            case AuthError.MissingEmail:
+               //Disattiva();
+                msg5.gameObject.SetActive(true);
+                break;
+                
+            case AuthError.WeakPassword:
+               Disattiva();
+               msg4.gameObject.SetActive(true);
+                break;
+
             case AuthError.AccountExistsWithDifferentCredentials:
                 break;
 
             case AuthError.MissingPassword:
-                msg5.text = "Devi scrivere la password";
+                Disattiva();
+                msg6.gameObject.SetActive(true);
                 break;
 
             case AuthError.WrongPassword:
-                msg4.text = "Troppo corta";
+                Disattiva();
+                
+                msg8.gameObject.SetActive(true);
+
                 break;
 
             case AuthError.InvalidEmail:
+                Disattiva();
+                msg7.gameObject.SetActive(true);
                 
                 break;
 
@@ -205,4 +335,21 @@ void GetErrorrMessage(AuthError errorCode)
 
         print(msg);
     }
+
+    public void Disattiva()
+    {
+        msg.gameObject.SetActive(false);
+        msg1.gameObject.SetActive(false);
+        msg2.gameObject.SetActive(false);
+        msg3.gameObject.SetActive(false);
+        msg4.gameObject.SetActive(false);
+        msg5.gameObject.SetActive(false);
+        msg6.gameObject.SetActive(false);
+        msg7.gameObject.SetActive(false);
+        msg8.gameObject.SetActive(false);
+
+
+
+    }
 }
+
