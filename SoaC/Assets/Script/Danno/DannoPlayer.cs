@@ -8,7 +8,7 @@ public class DannoPlayer : MonoBehaviour
 {
     public float TempoMorte;
     public float Vita;
-    float danno = 20;
+    float danno = 8;
     float dannoAcqua = 0.1f;
     public Animator anim;
     public GameObject Controller;

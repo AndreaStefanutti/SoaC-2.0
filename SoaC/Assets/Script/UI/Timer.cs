@@ -30,7 +30,7 @@ public class Timer : MonoBehaviour
     {
         tempoTrascorso = tempoTrascorso + Time.deltaTime;
         tempoCronometro = TimeSpan.FromSeconds(tempoTrascorso);
-        string tempoCronometratoStr = "tempo:" + tempoCronometro.ToString("mm':'ss':'ff");
+        string tempoCronometratoStr = "timer: "+ tempoCronometro.ToString("mm':'ss':'ff");
         Cronometro.text = tempoCronometratoStr;
     }
     public void InizializzareTempo()
