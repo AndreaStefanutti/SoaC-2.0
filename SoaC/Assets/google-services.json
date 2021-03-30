@@ -2,6 +2,7 @@
   "project_info": {
     "project_number": "936385455709",
     "project_id": "soac-14cd3",
+    "firebase_url": "https://soac-14cd3-default-rtdb.firebaseio.com/",
     "storage_bucket": "soac-14cd3.appspot.com"
   },
   "client": [

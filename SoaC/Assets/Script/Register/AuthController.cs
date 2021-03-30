@@ -13,12 +13,10 @@ using TMPro;
 public class AuthController : MonoBehaviour
 {
     public Text emailInput, PasswordInput;
+    public float email;
 
-
-    int daje = 0; 
-
+    int daje = 0;
     
-
 
 
     public TextMeshProUGUI msg;  //login corretto con anonimo
@@ -67,24 +65,26 @@ public class AuthController : MonoBehaviour
                 Firebase.FirebaseException e = task.Exception.Flatten().InnerExceptions[0] as Firebase.FirebaseException;
 
                 GetErrorrMessage((AuthError)e.ErrorCode);
-
-                Disattiva();
                 msg3.text = "LoginErrato";
                 msg3.gameObject.SetActive(true);
+                Disattiva();
+               
 
                 return;
 
             }
-            if (task.IsCompleted)
+                if (task.IsCompleted)
             {
                 
                 print("utente loggato correttamente");
                 daje = 1;
-                LoginCOrretto();
-
-
-                  //msg.text = "Login OK";
+                LoginCOrretto();         
+                PlayerPrefs.SetString("email", emailInput.text);
                 
+
+
+                //msg.text = "Login OK";
+
                 msg.gameObject.SetActive(true);
                // LoginCorretto();
             }
@@ -98,6 +98,10 @@ public class AuthController : MonoBehaviour
     {
         if (daje == 1)
         {
+            System.Random random = new System.Random();
+
+            email = random.Next(90);
+           PlayerPrefs.SetFloat("email",email);
             msg.gameObject.SetActive(true);
             StartCoroutine(Wait());
         }
@@ -233,10 +237,15 @@ public class AuthController : MonoBehaviour
         if(FirebaseAuth.DefaultInstance.CurrentUser != null)
         {
             FirebaseAuth.DefaultInstance.SignOut();
+            
+            
+            PlayerPrefs.SetString("email", null);
+            email = -1;
         }
     }
     public void LogoutCorretto()
     {
+        daje = 0;
         Disattiva();
         msg1.gameObject.SetActive(true);
         print("Logout effettuato ");
@@ -244,7 +253,7 @@ public class AuthController : MonoBehaviour
 
 
 
-        
+
 
     }
 
@@ -300,8 +309,13 @@ void GetErrorrMessage(AuthError errorCode)
 
        switch (errorCode)
         {
+            case AuthError.TooManyRequests:
+                //Disattiva();
+                msg8.gameObject.SetActive(true);
+                break;
+
             case AuthError.MissingEmail:
-               //Disattiva();
+               Disattiva();
                 msg5.gameObject.SetActive(true);
                 break;
                 
@@ -310,8 +324,16 @@ void GetErrorrMessage(AuthError errorCode)
                msg4.gameObject.SetActive(true);
                 break;
 
-            case AuthError.AccountExistsWithDifferentCredentials:
+            case AuthError.EmailAlreadyInUse:
+                Disattiva();
+                msg7.gameObject.SetActive(true);
                 break;
+
+            case AuthError.AccountExistsWithDifferentCredentials:
+                Disattiva();
+                msg7.gameObject.SetActive(true);
+                break;
+            
 
             case AuthError.MissingPassword:
                 Disattiva();
