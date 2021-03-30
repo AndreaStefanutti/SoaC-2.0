@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 905082700}
-  m_IndirectSpecularColor: {r: 0.35512224, g: 0.46264574, b: 0.49890855, a: 1}
+  m_IndirectSpecularColor: {r: 0.35512316, g: 0.4626049, b: 0.4989094, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -274,7 +274,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22914993}
-  m_LocalRotation: {x: 0.00000008940697, y: 0.000000059604645, z: -0.08832264, w: -0.99609196}
+  m_LocalRotation: {x: -0, y: 0.000000029802326, z: -0.08832268, w: -0.99609196}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7450,7 +7450,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 707332557}
-  m_LocalRotation: {x: 0.28893828, y: 0.36348698, z: -0.11968214, w: 0.8775352}
+  m_LocalRotation: {x: 0.2889382, y: 0.36348695, z: -0.11968209, w: 0.87753534}
   m_LocalPosition: {x: -37.105904, y: 5.662618, z: -8.490032}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10093,7 +10093,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 914177213}
-  m_LocalRotation: {x: 0.023056744, y: -0.0025362668, z: -0.10931422, w: -0.99373657}
+  m_LocalRotation: {x: 0.023056626, y: -0.002536267, z: -0.10931427, w: -0.9937366}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -13760,7 +13760,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1307800051}
-  m_LocalRotation: {x: 0.002498865, y: -0.023162028, z: 0.9939611, w: 0.10723138}
+  m_LocalRotation: {x: 0.0024988356, y: -0.023162104, z: 0.99396116, w: 0.107231446}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -13983,6 +13983,7 @@ GameObject:
   - component: {fileID: 1347481123}
   - component: {fileID: 1347481125}
   - component: {fileID: 1347481124}
+  - component: {fileID: 1347481126}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
@@ -14050,6 +14051,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347481122}
   m_CullTransparentMesh: 0
+--- !u!114 &1347481126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347481122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75e9738d8b29c940b74b380538a816b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1358363442
 GameObject:
   m_ObjectHideFlags: 0
