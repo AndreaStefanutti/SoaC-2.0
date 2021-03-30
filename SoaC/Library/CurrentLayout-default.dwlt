@@ -15,13 +15,19 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 43.2
     width: 1536
     height: 780.8
+=======
+    y: 43
+    width: 1920
+    height: 1037
+>>>>>>> origin/Alessio-2.0
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 7}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 392}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -39,12 +45,21 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 696
     y: 0
     width: 529
     height: 433
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
+=======
+    x: 802
+    y: 0
+    width: 565
+    height: 592
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> origin/Alessio-2.0
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -69,12 +84,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1536
     height: 731
   m_MinSize: {x: 881, y: 492}
   m_MaxSize: {x: 16006, y: 14042}
   vertical: 0
   controlID: 90
+=======
+    width: 1920
+    height: 987
+  m_MinSize: {x: 880, y: 342}
+  m_MaxSize: {x: 16005, y: 8042}
+  vertical: 0
+  controlID: 133
+>>>>>>> origin/Alessio-2.0
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -90,12 +114,21 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1225
     y: 0
     width: 311
     height: 731
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
+=======
+    x: 1367
+    y: 0
+    width: 553
+    height: 987
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> origin/Alessio-2.0
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -118,10 +151,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 222
     height: 433
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
+=======
+    width: 396
+    height: 592
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> origin/Alessio-2.0
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -137,12 +177,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
   m_Name: ProjectBrowser
+=======
+  m_Name: ConsoleWindow
+>>>>>>> origin/Alessio-2.0
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 433
     width: 1225
     height: 298
@@ -154,6 +199,19 @@ MonoBehaviour:
   - {fileID: 19}
   m_Selected: 0
   m_LastSelected: 1
+=======
+    y: 592
+    width: 1367
+    height: 395
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 19}
+  m_Panes:
+  - {fileID: 14}
+  - {fileID: 19}
+  m_Selected: 1
+  m_LastSelected: 0
+>>>>>>> origin/Alessio-2.0
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -174,8 +232,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1536
     height: 781
+=======
+    width: 1920
+    height: 1037
+>>>>>>> origin/Alessio-2.0
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &8
@@ -216,8 +279,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 761
     width: 1536
+=======
+    y: 1017
+    width: 1920
+>>>>>>> origin/Alessio-2.0
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -240,12 +308,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1225
     height: 731
   m_MinSize: {x: 605, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
   controlID: 36
+=======
+    width: 1367
+    height: 987
+  m_MinSize: {x: 605, y: 342}
+  m_MaxSize: {x: 12005, y: 8042}
+  vertical: 1
+  controlID: 55
+>>>>>>> origin/Alessio-2.0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -266,12 +343,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1225
     height: 433
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
   controlID: 136
+=======
+    width: 1367
+    height: 592
+  m_MinSize: {x: 605, y: 221}
+  m_MaxSize: {x: 12005, y: 4021}
+  vertical: 0
+  controlID: 56
+>>>>>>> origin/Alessio-2.0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -287,12 +373,21 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 222
     y: 0
     width: 474
     height: 433
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
+=======
+    x: 396
+    y: 0
+    width: 406
+    height: 592
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> origin/Alessio-2.0
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -347,9 +442,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 506.4
     width: 1224
     height: 277
+=======
+    y: 665
+    width: 1366
+    height: 374
+>>>>>>> origin/Alessio-2.0
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -374,10 +475,17 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 221.85437}
     m_SelectedIDs: 2a470000
     m_LastClickedID: 18218
     m_ExpandedIDs: 00000000ce460000d0460000d2460000d4460000d6460000d8460000da460000dc460000de460000e0460000e2460000e4460000e64600002c47000000ca9a3b
+=======
+    scrollPos: {x: 0, y: 268}
+    m_SelectedIDs: 78470000
+    m_LastClickedID: 18296
+    m_ExpandedIDs: 000000000c4700000e47000010470000124700001447000016470000184700001a4700001c4700001e4700002047000022470000244700002647000000ca9a3b
+>>>>>>> origin/Alessio-2.0
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -405,7 +513,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000ce460000d0460000d2460000d4460000d6460000d8460000da460000dc460000de460000e0460000e2460000e4460000e6460000
+=======
+    m_ExpandedIDs: 000000000c4700000e47000010470000124700001447000016470000184700001a4700001c4700001e47000020470000224700002447000026470000
+>>>>>>> origin/Alessio-2.0
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -430,9 +542,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: 1ea50100
+    m_LastClickedInstanceID: 107806
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -482,10 +594,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1224.8
     y: 73.6
     width: 310
     height: 710
+=======
+    x: 1367
+    y: 73
+    width: 552
+    height: 966
+>>>>>>> origin/Alessio-2.0
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []
@@ -521,16 +640,28 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 73.6
     width: 221
     height: 412
+=======
+    y: 73
+    width: 395
+    height: 571
+>>>>>>> origin/Alessio-2.0
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 42470000
       m_LastClickedID: 0
       m_ExpandedIDs: 4eaaffffcae1ffffaee2ffff3efbffff5c6e0000
+=======
+      m_SelectedIDs: aeb30100
+      m_LastClickedID: 0
+      m_ExpandedIDs: 2eecfdffe291feffbec3feff362effff3a3bffffe447ffffcc50ffffb859ffff0e6bffff3693ffff8ca0ffff90a9ffffd0baffffe4baffff26dbffff3efbffff343d0000f43d0000e09f0000d0a6000048a90000a41d01001c200100b45a01001e5b01003c6d01005ea401001ea50100eeb20100aeb30100b6ee010076ef0100
+>>>>>>> origin/Alessio-2.0
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -575,10 +706,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 222.40001
     y: 73.6
     width: 472
     height: 412
+=======
+    x: 396
+    y: 73
+    width: 404
+    height: 571
+>>>>>>> origin/Alessio-2.0
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 7b35cdffeae3bfd4dbeceffd87bec4bc
@@ -590,9 +728,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 845.89557, y: 210.81917, z: 0}
     speed: 2
     m_Value: {x: 845.89557, y: 210.81917, z: 0}
+=======
+    m_Target: {x: 954.15576, y: 461.26788, z: -754.5886}
+    speed: 2
+    m_Value: {x: 954.15576, y: 461.26788, z: -754.5886}
+>>>>>>> origin/Alessio-2.0
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -638,13 +782,19 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    m_Target: {x: -0.20248117, y: 0.0622329, z: -0.01289459, w: -0.9772216}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: -0.20248118, y: 0.062232904, z: -0.012894591, w: -0.97722167}
   m_Size:
+<<<<<<< HEAD
     m_Target: 362.91367
     speed: 2
     m_Value: 362.91367
+=======
+    m_Target: 10
+    speed: 2
+    m_Value: 10
+>>>>>>> origin/Alessio-2.0
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -690,10 +840,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 696
     y: 73.6
     width: 527
     height: 412
+=======
+    x: 802
+    y: 73
+    width: 563
+    height: 571
+>>>>>>> origin/Alessio-2.0
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -739,16 +896,24 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
       width: 527
       height: 391
     m_Scale: {x: 0.34309897, y: 0.34309897}
     m_Translation: {x: 263.5, y: 195.50002}
+=======
+      width: 563
+      height: 550
+    m_Scale: {x: 0.29322916, y: 0.29322916}
+    m_Translation: {x: 281.5, y: 275}
+>>>>>>> origin/Alessio-2.0
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -768
       y: -569.80646
       width: 1536
@@ -756,9 +921,18 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 0.34309897
   m_LastWindowPixelSize: {x: 658.75, y: 515}
+=======
+      x: -960
+      y: -937.83307
+      width: 1920
+      height: 1875.6661
+    m_MinimalGUI: 1
+  m_defaultScale: 0.29322916
+  m_LastWindowPixelSize: {x: 563, y: 571}
+>>>>>>> origin/Alessio-2.0
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000000000000000000
+  m_LowResolutionForAspectRatios: 01000001000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
 --- !u!114 &19
@@ -783,7 +957,13 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 506.4
     width: 1224
     height: 277
+=======
+    y: 665
+    width: 1366
+    height: 374
+>>>>>>> origin/Alessio-2.0
   m_ViewDataDictionary: {fileID: 0}

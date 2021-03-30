@@ -4,8 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 public class PunteggioTotale : MonoBehaviour
 {
+    
     public GameObject Player;
     float somma;
+    
 
     Text score;
     // Start is called before the first frame update
@@ -14,9 +16,11 @@ public class PunteggioTotale : MonoBehaviour
         somma = Score.Punteggio + (Player.GetComponent<Timer>().tempoTrascorso) / 6;
         score = GetComponent<Text>();
         score.text = "Score: " + somma;
+        Salvataggio database = new Salvataggio();
         if (somma > PlayerPrefs.GetFloat("HighScore", 0))
         {
             PlayerPrefs.SetFloat("HighScore", somma);
+            database.SalvaPunteggio(somma);
         }
     }
 }
