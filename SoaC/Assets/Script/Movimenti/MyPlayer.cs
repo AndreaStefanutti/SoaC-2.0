@@ -22,11 +22,13 @@ public class MyPlayer : MonoBehaviour
     public GameObject marco;
     public GameObject bastone;
 
+    public bool mazzata;
+
 
 
     public FixedJoystick joystick;
     //public FixedTouchField touchField;
-    void start()
+    private void start()
     {
        
         movimentoPlayer = GetComponent<Animator>();
@@ -43,11 +45,20 @@ public class MyPlayer : MonoBehaviour
         slotFull = false;
         InputMobile = false;
 
+        mazzata = false;
+
+
+        //Timer.iniziale.InizializzareTempo();
 
     }
 
+    private void Start()
+    {
+        Timer.iniziale.InizializzareTempo();
+    }
+
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         
 
@@ -104,6 +115,11 @@ public class MyPlayer : MonoBehaviour
            movimentoPlayer.SetBool("isShooting", true);
            isShooting = true;
            counter=0;
+            if (!slotFull)
+            {
+                mazzata = true;
+            }
+
        }
        else
        {
@@ -112,6 +128,7 @@ public class MyPlayer : MonoBehaviour
            {
                movimentoPlayer.SetBool("isShooting", false);
                isShooting = false;
+                mazzata = false;
            }
        }
         bastone.SetActive(!slotFull);
