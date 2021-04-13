@@ -21,26 +21,32 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        if (omino.GetComponent<DannoPlayer>().Vita <= 0)
-            speed = 0f;
-       
-        if (!tmp.notPaused)
+        if (omino.GetComponent<DannoPlayer>().Vita > 0)
         {
-            transform.rotation = Quaternion.LookRotation(target.position - transform.position);
+            
 
-            transform.position = Vector3.MoveTowards(transform.position, target.position, speed / 50);
-            float distance = Vector3.Distance(target.position, transform.position);
-            if (distance < 1)
+            if (!tmp.notPaused)
             {
-                anim.SetBool("isWalking", false);
-                anim.SetBool("attack", true);
-            }
-            else
-            {
-                anim.SetBool("isWalking", true);
-                anim.SetBool("attack", false);
-            }
+                transform.rotation = Quaternion.LookRotation(target.position - transform.position);
 
+                transform.position = Vector3.MoveTowards(transform.position, target.position, speed / 50);
+                float distance = Vector3.Distance(target.position, transform.position);
+                if (distance < 1)
+                {
+                    anim.SetBool("isWalking", false);
+                    anim.SetBool("attack", true);
+                }
+                else
+                {
+                    anim.SetBool("isWalking", true);
+                    anim.SetBool("attack", false);
+                }
+
+            }
         }
+        else
+        {
+            speed = 0f;
         }
     }
+}

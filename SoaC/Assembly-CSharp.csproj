@@ -110,6 +110,7 @@
     <Compile Include="Assets\Script\Sparare\AutoDestroy.cs" />
     <Compile Include="Assets\Script\Sparare\TPSShooter.cs" />
     <Compile Include="Assets\Script\Sparare\WeaponRotator.cs" />
+    <Compile Include="Assets\Script\Spawn\TimeSpawnM107.cs" />
     <Compile Include="Assets\Script\Spawn\TimedSpawn.cs" />
     <Compile Include="Assets\Script\Suoni\SoundManager.cs" />
     <Compile Include="Assets\Script\UI\BarraVita.cs" />

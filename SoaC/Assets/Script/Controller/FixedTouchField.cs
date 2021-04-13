@@ -1,5 +1,5 @@
 
-//------- CREDITS DIZTEL GAME (YOUTUBE CHANNEL)
+
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -13,6 +13,7 @@ public class FixedTouchField : MonoBehaviour, IPointerDownHandler, IPointerUpHan
     protected int PointerId;
     
     public bool Pressed;
+    
 
     // Use this for initialization
   
@@ -22,6 +23,8 @@ public class FixedTouchField : MonoBehaviour, IPointerDownHandler, IPointerUpHan
     {
         if (Pressed)
         {
+            //GetComponent<PickUpController>().Drop();
+
             if (PointerId >= 0 && PointerId < Input.touches.Length)
             {
                 TouchDist = Input.touches[PointerId].position - PointerOld;

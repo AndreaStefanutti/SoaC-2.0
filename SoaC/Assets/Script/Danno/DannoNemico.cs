@@ -8,11 +8,13 @@ public class DannoNemico : MonoBehaviour
     public float vita = 100;
     public Animator anim;
     public GameObject omino;
+    
     void Start()
     {
        
         anim = GetComponent<Animator>();
         anim.SetBool("Death", false);
+        
 
     }
 
@@ -20,7 +22,9 @@ public class DannoNemico : MonoBehaviour
     {
         if (vita <= 0)
         {
+           
             StartCoroutine(wait());
+            
             
 
 
