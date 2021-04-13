@@ -20,7 +20,7 @@ public class Salvataggio : MonoBehaviour
     {
         email = PlayerPrefs.GetFloat("email");
         //reference = FirebaseDatabase.DefaultInstance.RootReference;
-        PlayerPrefs.SetFloat("HighScore", 0);
+        //PlayerPrefs.SetFloat("HighScore", 0);
     }
 
 
