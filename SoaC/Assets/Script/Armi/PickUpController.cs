@@ -68,9 +68,11 @@ public class PickUpController : MonoBehaviour
 
     public void Drop()
     {
+
+
         omino.GetComponent<MyPlayer>().slotFull = false;
-        equipped = false;
-      
+        equipped = false; 
+        
 
         //Set parent to null
         transform.SetParent(null);
@@ -83,13 +85,20 @@ public class PickUpController : MonoBehaviour
         rb.velocity = player.GetComponent<Rigidbody>().velocity;
 
         //AddForce
+
         rb.AddForce(fpsCam.forward * dropForwardForce, ForceMode.Impulse);
         rb.AddForce(fpsCam.up * dropUpwardForce, ForceMode.Impulse);
         //Add random rotation
         float random = UnityEngine.Random.Range(-1f, 1f);
         rb.AddTorque(new Vector3(random, random, random) * 10);
+        
 
         //Disable script
         //gunScript.enabled = false;
+
+
+
+
     }
+    
 }
